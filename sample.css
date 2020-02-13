@@ -1,4 +1,6 @@
-.athlete h1, .av_highlight, .video_eventType_title, .av_accordion_title_bar_red, #filterToggle, .av_highlight_selected, .modal-header, .modal-footer, #av_addToWatchlist .widget-content, .av_dropdown, .av_dropdown_content, .av_detail .panel-heading, .panel-primary > .panel-heading {
+.athlete h1, .av_highlight, .video_eventType_title, .av_accordion_title_bar_red, #filterToggle, 
+.av_highlight_selected, .modal-header, .modal-footer, #av_addToWatchlist .widget-content, .av_dropdown, 
+.av_dropdown_content, .av_detail .panel-heading, .panel-primary > .panel-heading {
     background: #7a021b;
     background: -moz-linear-gradient(left, #7a021b 0%, #000 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #7a021b), color-stop(100%, #000));
@@ -9,7 +11,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='#000000', GradientType=1)
 }
 
-#watchlistSpec, .av_widget-title, .av_team_roster > thead > tr, .av_dialog_widget_title, .av_dialog_widget_footer, .av_dialog_widget_message button, #addNewWatchlistButton {
+#watchlistSpec, .av_widget-title, .av_team_roster > thead > tr, .av_dialog_widget_title, .av_dialog_widget_footer, 
+.av_dialog_widget_message button, #addNewWatchlistButton {
     background-color: #7a021b;
     background: #7a021b;
     background: -moz-linear-gradient(top, #7a021b 0%, #000 100%);
@@ -744,7 +747,8 @@ body {
     padding: 10px
 }
 
-.av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, .av_dialog_widget_message h6 {
+.av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, 
+.av_dialog_widget_message h6 {
     color: #000;
     margin: 0
 }
@@ -1057,221 +1061,11 @@ body {
     color: #7a021b
 }
 
-.av_xmini {
-    width: 30px !important
-}
-
-.av_mini {
-    width: 60px !important
-}
-
-.av_small {
-    width: 90px !important
-}
-
-.av_medium {
-    width: 150px !important
-}
-
-.av_large {
-    width: 210px !important
-}
-
-.av_xlarge {
-    width: 270px !important
-}
-
-.av_xxlarge {
-    width: 320px !important
-}
-
-.av_xmini_fluid {
-    width: 11% !important
-}
-
-.av_mini_fluid {
-    width: 23.5% !important
-}
-
-.av_small_fluid {
-    width: 36.5% !important
-}
-
-.av_medium_fluid {
-    width: 48.5% !important
-}
-
-.av_large_fluid {
-    width: 61% !important
-}
-
-.av_xlarge_fluid {
-    width: 73.5% !important
-}
-
-.av_xxlarge_fluid {
-    width: 86% !important
-}
-
-.av_hzmini {
-    margin-left: 2px;
-    margin-right: 2px
-}
-
-.av_hzsmall {
-    margin-left: 4px;
-    margin-right: 4px
-}
-
-.av_hzmedium {
-    margin-left: 8px;
-    margin-right: 8px
-}
-
-.av_hzlarge {
-    margin-left: 16px;
-    margin-right: 16px
-}
-
-.av_hzxlarge {
-    margin-left: 32px;
-    margin-right: 32px
-}
-
-.av_hzxxlarge {
-    margin-left: 64px;
-    margin-right: 64px
-}
-
-.center_contents {
-    text-align: center
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto
-}
-
-.av_info1 {
-    width: 8%
-}
-
-.av_info2 {
-    width: 17%
-}
-
-.av_info3 {
-    width: 25%
-}
-
-.av_info4 {
-    width: 33%
-}
-
-.av_info5 {
-    width: 42%
-}
-
-.av_info6, .av_half {
-    width: 50%
-}
-
-.av_info7 {
-    width: 58%
-}
-
-.av_info8 {
-    width: 67%
-}
-
-.av_info9 {
-    width: 75%
-}
-
-.av_info10 {
-    width: 83%
-}
-
-.av_info11 {
-    width: 92%
-}
-
-.av_info12, .av_full {
-    width: 100%
-}
-
-.av_offset1 {
-    padding-left: 8%
-}
-
-.av_offset2 {
-    padding-left: 17%
-}
-
-.av_offset3 {
-    padding-left: 25%
-}
-
-.av_offset4 {
-    padding-left: 33%
-}
-
-.av_offset5 {
-    padding-left: 42%
-}
-
-.av_offset6 {
-    padding-left: 50%
-}
-
-.av_offset7 {
-    padding-left: 58%
-}
-
-.av_offset8 {
-    padding-left: 67%
-}
-
-.av_offset9 {
-    padding-left: 75%
-}
-
-.av_offset10 {
-    padding-left: 83%
-}
-
-.av_offset11 {
-    padding-left: 92%
-}
-
-.av_offset12 {
-    padding-left: 100%
-}
-
-.av_font10 {
-    font-size: 10px !important
-}
-
-.av_font11 {
-    font-size: 11px !important
-}
-
-.av_font12 {
-    font-size: 12px !important
-}
-
-.av_font16 {
-    font-size: 16px !important
-}
-
-.av_font18 {
-    font-size: 18px !important
-}
-
 @font-face {
     font-family: 'SofiaProLight';
     src: url("../font/SofiaProLight-webfont.eot");
-    src: url("../font/SofiaProLight-webfont.svg#svgFontName") format("svg"), url("../font/SofiaProLight-webfont.ttf") format("truetype"), url("../font/SofiaProLight-webfont.woff") format("woff"), url("../font/SofiaProLight-webfont.woff2") format("woff2")
+    src: url("../font/SofiaProLight-webfont.svg#svgFontName") format("svg"), url("../font/SofiaProLight-webfont.ttf") format("truetype"), 
+        url("../font/SofiaProLight-webfont.woff") format("woff"), url("../font/SofiaProLight-webfont.woff2") format("woff2")
 }
 
 .av_go {
@@ -1396,7 +1190,8 @@ body {
 .av_title_bar_red {
     background: #7a021b;
     background: -moz-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a021b), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), color-stop(100%, #000));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a021b), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
+                color-stop(100%, #000));
     background: -webkit-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
     background: -o-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
     background: -ms-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
