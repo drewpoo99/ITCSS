@@ -1,37 +1,101 @@
-//Reds
-$maroon: #7a021b;
-$dark-red: #900;
-$red: #AA0000;
-
-
-//Greens
-$green: #060;
-
-//Yellows
-$pinkish-yellow: #FCC;
-$light-yellow: #fbeed5;
-$lighter-yellow: #fcf8e3;
-
-//Blues
-$purple-blue: #19006d;
-$dark-blue: #22028f;
-$navy: #2903a9;
-$blue: #00C;
-
-//Grays and blacks
+//Primary Colors
+$primary-red: #7a021b;
+$container-background: #050505;
 $black: #000;
-$darkest-gray: #050505;
-$darker-gray: #1D1D1D ;
-$dark-gray: #232323;
-$gray: #45484d;
-$medium-gray: #999;
-$light-gray: #d3d3d3;
-$lighter-gray: #cccccc;
-$lightest-gray: #DDDDDD;
-$box-shadow-gray: #323232bf;
+$darker-black: #232323;
+$darkest-gray: #1D1D1D;
+$gray: gray;
+$light-gray: #ccc;
+$headings: #d3d3d3;
 $white: #FFFFFF;
 
-//These grays are only seen on the team roster table (line 676ish)
+//av_message_bar
+$av-message-bar-background: #060;
+
+//watchListSpec
+$watch-list-border: #999;
+
+//av_error_message
+$av-error-message: #AA0000;
+
+//av_label
+$av-label: #FCC;
+
+//primaryTeam
+$primary-team-background:#2903a9;
+$primary-team-background-darker: #19006d;
+$primary-team-background-dark: #22028f;
+
+//av_game
+$av-game: #00c;
+
+//tab_widget legend
+$tab-widget-legend: #900;
+
+//video_event_title
+$video-event-title: #3F3F3F;
+
+//av_go
+$av-go-background-color: #006dcc;
+$av-go-background-image: #092abe;
+$av-go-background-image-dark: #102ba4;
+
+//av_save
+$av-save-background: #93f33d;
+$av-save-background-image: #63a329;
+$av-save-background-hover: #63a329;
+
+//av_cancel
+$av-cancel-gradient: #ee5f5b;
+$av-cancel-gradient-dark: #bd362f;
+$av-cancel-hover: #bd362f;
+
+//roster table (676)
 $roster-gray-light : #99a0a8;
 $roster-gray: #697077;
 $roster-gray-dark: #13181c;
+
+//Box shadow gray
+$box-shadow-gray: #323232bf; //line 972
+
+//alerts
+$success: green;
+$processing: darkred;
+$show_stable: green;
+$place_arrow: yellow;
+
+//Accordinon Gray (.av_accordion_title_bar line 1374)
+$accordion-title-bar: #3F3F3F;
+
+//av_title_bar_red
+$av-title-bar-gradient-1: #b51d1b;
+$av-title-bar-gradient-2: #ab2112;
+
+//instruction
+$instruction: #E0FF84;
+
+//Success Button (.av_btn_success ln. 1531)
+$av-success-box-shadow: #3ab54b;
+$av-success-background: #2da73f;
+$av-success-border: #132413;
+$av-success-text-shadow: #1d7a2a;
+$av-success-hover: #32b343;
+
+//av-btn-alt (.av_btn_alternate | ln. 1552)
+$av-btn-alt-box-shadow: #4b3ab5;
+$av-btn-alt-background: #3f2da7;
+$av-btn-alt-border: #1d1324;
+$av-btn-alt-text-shadow: #2a1d7a;
+$av-btn-alt-hover: #4332b3;
+
+//av-btn-cancel (.av_btn_cancel ln. 1570)
+$av-btn-cancel-box-shadow: #b54b3a;
+$av-btn-cancel-background: #a73f2d;
+$av-btn-cancel-border: #241d13;
+$av-btn-cancel-text-shadow: #7a2a1d;
+$av-btn-cancel-hover: #b34332;
+
+//adminBody
+$background-dark: #6d0019;
+$background: #8f0222;
+$background-light: #a90329;
