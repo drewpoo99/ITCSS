@@ -1,0 +1,40 @@
+@use '../settings/colors.scss';
+
+.av_team_roster{
+    border: thin solid $primary-red;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 200%;
+
+    thead{
+        tr{
+            background-color: $primary-red;
+            font-weight: bold;
+        }
+    }
+
+    th{
+        font-size: 11px;
+        border: thin solid $primary-red;
+        font-weight: bold
+    }
+
+    td{
+        font-size: 12px;
+        border: thin solid $primary-red;
+    }
+
+    table{
+        background: $av-team-background;
+        background: -moz-linear-gradient(top, $av-team-background 0%, $av-team-roster-grad1 36%, $av-team-roster-grad2 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $av-team-background), color-stop(36%, $av-team-roster-grad1), color-stop(100%, $av-team-roster-grad2));
+        background: -webkit-linear-gradient(top, $av-team-background 0%, $av-team-roster-grad1 36%, $av-team-roster-grad2 100%);
+        background: -o-linear-gradient(top, $av-team-background 0%, $av-team-roster-grad1 36%, $av-team-roster-grad2 100%);
+        background: -ms-linear-gradient(top, $av-team-background 0%, $av-team-roster-grad1 36%, $av-team-roster-grad2 100%);
+        background: linear-gradient(to bottom, $av-team-background 0%, $av-team-roster-grad1 36%, $av-team-roster-grad2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-team-background', endColorstr= '$av-team-roster-grad2', GradientType=0);
+        color: $white;
+        text-align: center;
+        width: 100%
+    }
+}
