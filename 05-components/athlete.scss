@@ -1,0 +1,22 @@
+.athlete {
+    h1 {
+        padding: 6px 1%;
+    }
+
+    dt{
+        font-size: 16px;
+        line-height: 150%;
+        float: left;
+        clear: both;
+        width: 35%;
+        font-weight: normal;
+        text-align: right
+    }
+
+    dd{
+        font-size: 16px;
+        line-height: 150%;
+        float: left;
+        width: 60%
+    }
+}

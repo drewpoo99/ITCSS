@@ -1,0 +1,24 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.article-post {
+    padding: 4px 1%;
+
+    p {
+        font-family: $vollkorn;
+        font-weight: normal;
+    }
+
+    a, .article-post a:link, .article-post a:active, .article-post a:visited {
+        color: $gray;
+    }
+
+    a:hover, .article-post .more {
+        color: $primary-red;
+        background-color: inherit;
+    }
+
+    a:hover .more {
+        color: $gray;
+    }
+}

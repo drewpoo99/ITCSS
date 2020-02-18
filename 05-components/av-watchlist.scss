@@ -33,13 +33,17 @@
     z-index: 2
 }
 
-#av_watchlist a.icon {
+#av_watchlist{ 
+    a.icon {
     float: right;
     padding: 7px;
-    width: auto
+    width: auto;
+    }
+
+    a.av_icon_right {
+        float: right;
+        padding: 0
+    }
 }
 
-#av_watchlist a.av_icon_right {
-    float: right;
-    padding: 0
-}
+#av_watchlist 
