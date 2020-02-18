@@ -1,0 +1,110 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, 
+.av_dialog_widget_message h6 {
+    color: $black;
+    margin: 0;
+}
+
+.av_dialog_widget{
+    display: none;
+    margin: 10px auto;
+    top: 0;
+    left: -360px;
+    position: absolute;
+    width: 350px;
+    z-index: 200 !important;
+
+    #watchlist_add_new {
+        display: none;
+        margin: 10px auto;
+        top: 0;
+        left: -360px;
+        position: absolute;
+        width: 350px;
+        z-index: 200 !important
+    }
+
+    .icon{
+        margin: 0;
+        color: $white;
+        padding: 0 3%;
+        width: 10%;
+        text-align: left;
+        float: left;
+    }
+
+    .title{
+        margin: 0;
+        text-align: center;
+        float: left;
+        width: 67%;
+    }
+
+    .close{
+        margin: 0;
+        color: $white;
+        padding: 0 3%;
+        width: 10%;
+        text-align: right;
+        float: right;
+    }
+}
+
+.av_dialog_widget_title, .av_dialog_widget_footer {
+    background-color: $primary-red;
+    color: $white;
+    font: bold 20px $veranda;
+    min-height: 24px;
+    padding: 6px 0;
+    width: 100%
+}
+
+.av_dialog_widget_message {
+    background-color: $white;
+    color: $black;
+    font: normal 1.5em $vollkorn;
+    padding: 3%;
+    text-align: left;
+    line-height: 1
+}
+
+#av_dialog_widget_message {
+    background-color: $white;
+    color: $black;
+    display: table-cell;
+    font: normal 1.5em $vollkorn;
+    padding: 3%;
+    text-align: left;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.av_dialog_widget_footer {
+    text-align: center;
+
+    button {
+        width: 15%
+    }
+}
+
+.av_dialog_widget_footer 
+
+#watchlist_add_new .av_dialog_widget_message {
+    text-align: center;
+
+    input{
+        color: $darkest-gray;
+    }
+
+    button{
+        color: $darkest-gray;  
+    }
+}
+
+
+.av_dialog_widget_message button, #addNewWatchlistButton {
+    background-color: $primary-red;
+    color: $white;
+}

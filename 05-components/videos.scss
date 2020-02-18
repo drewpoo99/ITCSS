@@ -1,0 +1,49 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.video_eventType_title {
+    padding: 1px 1%
+}
+
+*[id*='eventType'] .accordion-body {
+    padding-right: 0;
+    padding-left: 2%
+}
+
+.video_event_title {
+    box-shadow: 0 1px 0 $black;
+    background-color: $black;
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from($video-event-title), to $black);
+    background-image: -webkit-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -moz-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -ms-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -o-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: linear-gradient(top, $video-event-title 0%, $black 100%);
+}
+
+.video_match_title a {
+    font-size: 14px
+}
+
+.video_eventType_title span.icon, .video_event_title span.icon, .video_match_title span.icon {
+    border-right: 1px solid $light-gray;
+    float: left;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    padding: 8px 10px 7px 8px;
+    margin-right: 10px;
+}
+
+.video_event_title {
+    font: normal 20px $vollkorn;
+    color: #d3d3d3;
+    padding: 1px 1%;
+}
+
+.video_eventType_title a:hover {
+    color: $black;
+}
+
+.video_event_title a:hover {
+    background-color: transparent;
+}

@@ -1,0 +1,35 @@
+@use '../00-settings/colors.scss';
+
+#av_loginbox {
+    background-color: $darker-black;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    background-clip: padding-box;
+    border: 2px solid $primary-red;
+    box-shadow: none;
+    max-width: inherit;
+    min-width: 260px;
+    padding: 40px;
+    width: 20%;
+    margin: 70px auto;
+    text-align: center;
+
+    .logo {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .av_btn_success {
+        margin: 10px auto;
+    }
+    .av_form_group {
+        float: none;
+        text-align: left;
+        padding-left: 20px;
+        width: auto
+    }
+    
+} 
+#av_loginbox .av_form_group label, #loginbox .av_form_group input {
+    float: none
+}

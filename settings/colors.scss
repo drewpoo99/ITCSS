@@ -4,7 +4,6 @@ $container-background: #050505;
 $black: #000;
 $darker-black: #232323;
 $darkest-gray: #1D1D1D;
-$dark-gray: #45484d;
 $gray: gray;
 $light-gray: #ccc;
 $headings: #d3d3d3;
@@ -50,17 +49,13 @@ $av-go-background-image-dark: #102ba4;
 //av_save
 $av-save-background: #93f33d;
 $av-save-background-image: #63a329;
-$av-save-hover: #93f33d;
+$av-save-background-hover: #63a329;
 
 //av_cancel
 $av-cancel-gradient: #ee5f5b;
 $av-cancel-gradient-dark: #bd362f;
 $av-cancel-hover: #bd362f;
 
-//roster table (676)
-$roster-gray-light : #99a0a8;
-$roster-gray: #697077;
-$roster-gray-dark: #13181c;
 
 //Box shadow gray
 $box-shadow-gray: #323232bf; //line 972
@@ -103,6 +98,6 @@ $av-btn-cancel-text-shadow: #7a2a1d;
 $av-btn-cancel-hover: #b34332;
 
 //adminBody
-$admin-background-dark: #6d0019;
-$admin-background: #8f0222;
-$admin-background-light: #a90329;
+$background-dark: #6d0019;
+$background: #8f0222;
+$background-light: #a90329;
