@@ -7,6 +7,10 @@
     max-width: inherit
 }
 
+#loginbox .av_form_group input {
+    float: none
+}
+
 .form-inline > .radio {
     min-width: 12%
 }
@@ -27,15 +31,11 @@
     clear: both
 }
 
-a.icon {
-    padding: 7px
-}
-
 #av_messageBar {
     background: $av-message-bar-background;
     color: $white;
     display: none;
-    font: bold 1.5em "Vollkorn", serif;
+    font: bold 1.5em $vollkorn;
     height: 27px;
     position: fixed;
     top: 0;
@@ -57,13 +57,13 @@ a.icon {
 
 .footer {
     text-align: center;
-    padding: 30px 0
-}
+    padding: 30px 0;
 
-.footer p {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 10px;
-    line-height: 12px
+    p {
+        font-family: $veranda;
+        font-size: 10px;
+        line-height: 12px
+    }
 }
 
 #search {
@@ -87,7 +87,7 @@ a.icon {
 }
 
 .darker_black {
-    background-color: #232323
+    background-color: $darker-black
 }
 
 .margin-right {
@@ -95,7 +95,7 @@ a.icon {
 }
 
 .container {
-    background-color: #050505
+    background-color: $container-background
 }
 
 .av_registration {
@@ -104,7 +104,7 @@ a.icon {
 }
 
 #av_loginbox {
-    background-color: #232323;
+    background-color: $darker-black;
     -webkit-border-radius: 24px;
     border-radius: 24px;
     background-clip: padding-box;
@@ -115,32 +115,29 @@ a.icon {
     padding: 40px;
     width: 20%;
     margin: 70px auto;
-    text-align: center
-}
+    text-align: center;
 
-#av_loginbox .logo {
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px
-}
-
-#av_loginbox .av_btn_success {
-    margin: 10px auto
-}
-
-#av_loginbox .av_form_group {
-    float: none;
-    text-align: left;
-    padding-left: 20px;
-    width: auto
-}
-
-#av_loginbox .av_form_group label, #loginbox .av_form_group input {
-    float: none
+    .logo {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .av_btn_success {
+        margin: 10px auto
+    }
+    .av_form_group {
+        float: none;
+        text-align: left;
+        padding-left: 20px;
+        width: auto;
+        label {
+            float: none
+        }
+    }
 }
 
 .av_password_reset {
-    background-color: #000000;
+    background-color: $black;
     -webkit-border-radius: 24px;
     border-radius: 24px;
     background-clip: padding-box;
@@ -150,19 +147,19 @@ a.icon {
 }
 
 .nav {
-    margin-bottom: 0
-}
+    margin-bottom: 0;
 
-.nav a.disabled-link {
-    color: gray;
-    cursor: default
-}
-
-.nav a.disabled-link:hover {
-    background-color: white;
-    background: none;
-    color: gray;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
+    a.disabled-link {
+        color: $gray;
+        cursor: default;        
+        &:hover {
+            background-color: white;
+            background: none;
+            color: $gray;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
+        }
+    }
+    
 }
 
 .accordion {
@@ -197,7 +194,7 @@ a.icon {
 }
 
 .av_watchlist_athlete {
-    font: normal 16px Verdana, Geneva, sans-serif;
+    font: normal 16px $veranda;
     padding-bottom: 6px;
     width: 100%
 }
@@ -205,9 +202,9 @@ a.icon {
 #watchlistSpec {
     opacity: 1;
     filter: alpha(opacity=100);
-    border: #999 thin solid;
+    border: $watch-list-border thin solid;
     color: white;
-    font: bold 20px Verdana, Geneva, sans-serif;
+    font: bold 20px $veranda;
     position: absolute;
     top: 30%;
     left: 35%;
@@ -215,15 +212,16 @@ a.icon {
     z-index: 2
 }
 
-#av_watchlist a.icon {
-    float: right;
-    padding: 7px;
-    width: auto
-}
-
-#av_watchlist a.av_icon_right {
-    float: right;
-    padding: 0
+#av_watchlist {
+    a.icon {
+        float: right;
+        padding: 7px;
+        width: auto;
+    }
+    a.av_icon_right {
+        float: right;
+        padding: 0
+    }
 }
 
 #av_dashboard .widget-box {
@@ -231,24 +229,23 @@ a.icon {
 }
 
 .av_widget-title {
-    box-shadow: 0 1px 0 #000;
+    box-shadow: 0 1px 0 $black;
     color: $white;
-    font: 20px normal Verdana, Geneva, sans-serif;
+    font: 20px normal $veranda;
     height: 32px;
     padding: 6px 2%
 }
 
 .av_message {
-    padding: 2px 1% 16px
-}
-
-.av_message p {
-    margin: 0
+    padding: 2px 1% 16px;
+    p {
+        margin: 0
+    }
 }
 
 .av_error_message {
     clear: both;
-    color: #AA0000;
+    color: $av-error-message;
     font-weight: bold;
     margin: 0 auto;
     padding: 4px;
@@ -265,7 +262,7 @@ a.icon {
 }
 
 .article-post p {
-    font-family: "Vollkorn", serif;
+    font-family: $vollkorn;
     font-weight: normal
 }
 
@@ -320,7 +317,7 @@ a.icon {
 
 .av_label, .av_label_sm {
     font-weight: normal;
-    color: #FCC
+    color: $av-label
 }
 
 .av_label {
@@ -345,15 +342,15 @@ a.icon {
     -webkit-border-radius: 6px;
     border-radius: 6px;
     background-clip: padding-box;
-    background: #2903a9;
-    background: -moz-linear-gradient(top, #2903a9 0%, #22028f 44%, #19006d 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2903a9), color-stop(44%, #22028f), color-stop(100%, #19006d));
-    background: -webkit-linear-gradient(top, #2903a9 0%, #22028f 44%, #19006d 100%);
-    background: -o-linear-gradient(top, #2903a9 0%, #22028f 44%, #19006d 100%);
-    background: -ms-linear-gradient(top, #2903a9 0%, #22028f 44%, #19006d 100%);
-    background: linear-gradient(to bottom, #2903a9 0%, #22028f 44%, #19006d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2903a9', endColorstr='#19006d', GradientType=0);
-    border: 0px solid #000000;
+    background: $primary-team-background;
+    background: -moz-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-team-background), color-stop(44%, $primary-team-background-dark), color-stop(100%, $primary-team-background-darker));
+    background: -webkit-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -o-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -ms-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: linear-gradient(to bottom, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-team-background', endColorstr='$primary-team-background-darker', GradientType=0);
+    border: 0px solid $black;
     content: "Primary";
     margin-left: 10px;
     margin-top: -4px;
@@ -369,7 +366,7 @@ a.icon {
     position: absolute;
     top: 72px;
     z-index: 1;
-    background-color: #999;
+    background-color: $watch-list-border;
     width: 80%
 }
 
@@ -422,7 +419,7 @@ a.icon {
 }
 
 #recentSearch li {
-    font: bold 12px Verdana, Geneva, sans-serif;
+    font: bold 12px $veranda;
     color: $primary-red;
     line-height: 150%
 }
@@ -433,7 +430,7 @@ a.icon {
 }
 
 #av_search_results {
-    background-color: #000
+    background-color: $black
 }
 
 #search input[type="checkbox"] {
@@ -445,14 +442,14 @@ a.icon {
     padding: 2px 14px;
     background-image: none;
     background-color: black;
-    color: #fcc;
+    color: $av-label;
     box-shadow: none
 }
 
 #search legend {
     border: none;
     border-bottom: thin rgb(204, 204, 204) solid;
-    color: #cccccc;
+    color: $light-gray;
     margin-bottom: 0;
     font-size: 18px;
     line-height: 100%
@@ -467,7 +464,7 @@ a.icon {
 }
 
 #av_pop {
-    background: #000;
+    background: $black;
     display: none;
     position: fixed;
     _position: absolute;
@@ -477,7 +474,7 @@ a.icon {
 #av_bkgnd_pop, .av_bkgnd_pop {
     opacity: 0.55;
     filter: alpha(opacity=55.0);
-    background: #000000;
+    background: $black;
     display: none;
     height: 100%;
     left: 0;
@@ -583,14 +580,14 @@ a.icon {
 }
 
 .av_team_roster table {
-    background: #99a0a8;
-    background: -moz-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #99a0a8), color-stop(36%, #697077), color-stop(100%, #13181c));
-    background: -webkit-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
-    background: -o-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
-    background: -ms-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
-    background: linear-gradient(to bottom, #99a0a8 0%, #697077 36%, #13181c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99a0a8', endColorstr='#13181c', GradientType=0);
+    background: $roster-gray-light;
+    background: -moz-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $roster-gray-light), color-stop(36%, $roster-gray), color-stop(100%, $roster-gray-dark));
+    background: -webkit-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
+    background: -o-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
+    background: -ms-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
+    background: linear-gradient(to bottom, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$roster-gray-light', endColorstr='$roster-gray-dark', GradientType=0);
     color: $white;
     text-align: center;
     width: 100%
@@ -610,12 +607,12 @@ a.icon {
 }
 
 .modal {
-    background-color: #000000
+    background-color: $black
 }
 
 .modal-dialog h1 {
     background-color: transparent;
-    font: bold 2.1em "Vollkorn", serif;
+    font: bold 2.1em $vollkorn;
     margin: -5px 5px 0;
     padding: 0
 }
@@ -655,7 +652,7 @@ a.icon {
 
 .av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, 
 .av_dialog_widget_message h6 {
-    color: #000;
+    color: $black;
     margin: 0
 }
 
@@ -698,7 +695,7 @@ a.icon {
 .av_dialog_widget_title, .av_dialog_widget_footer {
     background-color: $primary-red;
     color: white;
-    font: bold 20px Verdana, Geneva, sans-serif;
+    font: bold 20px $veranda;
     min-height: 24px;
     padding: 6px 0;
     width: 100%
@@ -706,8 +703,8 @@ a.icon {
 
 .av_dialog_widget_message {
     background-color: white;
-    color: #000;
-    font: normal 1.5em "Vollkorn", serif;
+    color: $black;
+    font: normal 1.5em $vollkorn;
     padding: 3%;
     text-align: left;
     line-height: 1
@@ -715,9 +712,9 @@ a.icon {
 
 #av_dialog_widget_message {
     background-color: white;
-    color: #000;
+    color: $black;
     display: table-cell;
-    font: normal 1.5em "Vollkorn", serif;
+    font: normal 1.5em $vollkorn;
     padding: 3%;
     text-align: left;
     line-height: 1;
@@ -756,7 +753,7 @@ a.icon {
 }
 
 #av_athleteEntry fieldset .tab {
-    border: #900 thin solid;
+    border: $tab-widget-legend thin solid;
     -webkit-border-top-left-radius: 17px;
     -webkit-border-top-right-radius: 17px;
     -moz-border-radius-topleft: 17px;
@@ -796,7 +793,7 @@ a.icon {
 
 .av_tab_widget legend {
     float: left;
-    border: #900 thin solid;
+    border: $tab-widget-legend thin solid;
     -webkit-border-top-left-radius: 17px;
     -webkit-border-top-right-radius: 17px;
     -moz-border-radius-topleft: 17px;
@@ -879,7 +876,7 @@ a.icon {
     color: black;
     padding: 1px 10px;
     margin: 0;
-    -webkit-box-shadow: 3px 3px 5px #323232bf;
+    -webkit-box-shadow: 3px 3px 5px $box-shadow-gray;
     -moz-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
     box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75)
 }
@@ -889,8 +886,8 @@ a.icon {
 }
 
 .av_game {
-    background-color: #00C;
-    font-family: Verdana, Geneva, sans-serif;
+    background-color: $av-game;
+    font-family: $veranda;
     font-size: 14px
 }
 
@@ -912,14 +909,14 @@ a.icon {
 }
 
 .video_event_title {
-    box-shadow: 0 1px 0 #000;
-    background-color: #000;
-    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#3F3F3F), to(#000));
-    background-image: -webkit-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -moz-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -ms-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -o-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: linear-gradient(top, #3F3F3F 0%, #000 100%)
+    box-shadow: 0 1px 0 $black;
+    background-color: $black;
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from($video-event-title), to($black));
+    background-image: -webkit-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -moz-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -ms-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -o-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: linear-gradient(top, $video-event-title 0%, $black 100%)
 }
 
 .video_match_title a {
@@ -936,13 +933,13 @@ a.icon {
 }
 
 .video_event_title {
-    font: normal 20px "Vollkorn", serif;
-    color: #d3d3d3;
+    font: normal 20px $vollkorn;
+    color: $headings;
     padding: 1px 1%
 }
 
 .video_eventType_title a:hover {
-    color: #000
+    color: $black
 }
 
 .video_event_title a:hover {
@@ -975,37 +972,37 @@ a.icon {
 }
 
 .av_go {
-    background-color: #006dcc;
+    background-color: $av-go-background-color;
     color: $white;
-    background-image: -moz-linear-gradient(top, #092abe, #102ba4);
-    background-image: -ms-linear-gradient(top, #092abe, #102ba4);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#092abe), to(#102ba4));
-    background-image: -webkit-linear-gradient(top, #092abe, #102ba4);
-    background-image: -o-linear-gradient(top, #092abe, #102ba4);
-    background-image: linear-gradient(top, #092abe, #102ba4);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#092abe', endColorstr='#102ba4', GradientType=0)
+    background-image: -moz-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+    background-image: -ms-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-go-background-image), to($av-go-background-image-dark));
+    background-image: -webkit-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+    background-image: -o-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+    background-image: linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-go-background-image', endColorstr='$av-go-background-image-dark', GradientType=0)
 }
 
 .av_go:hover {
-    background-color: #102BA4;
+    background-color: $av-go-background-image-dark;
     color: $primary-red;
     transition: none
 }
 
 .av_save {
-    background-color: #93f33d;
+    background-color: $av-save-background;
     color: $white;
-    background-image: -moz-linear-gradient(top, #93f33d, #63a329);
-    background-image: -ms-linear-gradient(top, #93f33d, #63a329);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#93f33d), to(#63a329));
-    background-image: -webkit-linear-gradient(top, #93f33d, #63a329);
-    background-image: -o-linear-gradient(top, #93f33d, #63a329);
-    background-image: linear-gradient(top, #93f33d, #63a329);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93f33d', endColorstr='#63a329', GradientType=0)
+    background-image: -moz-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -ms-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-save-background), to($av-save-background-image));
+    background-image: -webkit-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -o-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: linear-gradient(top, $av-save-background, $av-save-background-image);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', endColorstr='$av-save-background-image', GradientType=0)
 }
 
 .av_save:hover {
-    background-color: #63A329;
+    background-color: $av-save-hover;
     color: $primary-red;
     transition: none
 }
@@ -1013,18 +1010,18 @@ a.icon {
 .av_cancel {
     color: $white;
     background-color: $primary-red;
-    background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-    background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: linear-gradient(top, #ee5f5b, #bd362f);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0)
+    background-image: -moz-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -ms-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-cancel-gradient), to($av-cancel-gradient-dark));
+    background-image: -webkit-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -o-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', endColorstr='$av-cancel-gradient-dark', GradientType=0)
 }
 
 .av_cancel:hover {
-    background-color: #BD362F;
-    color: #000000;
+    background-color: $av-cancel-hover;
+    color: $black;
     transition: none
 }
 
@@ -1042,7 +1039,7 @@ a.icon {
 }
 
 .av_dropdown_title_bar {
-    color: #d3d3d3;
+    color: $headings;
     font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
     height: 32px
 }
@@ -1051,7 +1048,7 @@ a.icon {
     background-image: url(../img/DropdownArrow.gif);
     background-position: center center;
     background-repeat: no-repeat;
-    border-right: thin solid #d3d3d3;
+    border-right: thin solid $headings;
     float: left;
     width: 35px;
     height: 32px
@@ -1072,21 +1069,21 @@ a.icon {
 }
 
 .av_accordion_title_bar {
-    box-shadow: 0 1px 0 #000;
-    background-color: #000;
-    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#3F3F3F), to(#000));
-    background-image: -webkit-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -moz-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -ms-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: -o-linear-gradient(top, #3F3F3F 0%, #000 100%);
-    background-image: linear-gradient(top, #3F3F3F 0%, #000 100%);
+    box-shadow: 0 1px 0 $black;
+    background-color: $black;
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from($video-event-title), to($black));
+    background-image: -webkit-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -moz-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -ms-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: -o-linear-gradient(top, $video-event-title 0%, $black 100%);
+    background-image: linear-gradient(top, $video-event-title 0%, $black 100%);
     font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
     height: 36px;
     width: 100%
 }
 
 .av_accordion_title_bar_red {
-    box-shadow: 0 1px 0 #000;
+    box-shadow: 0 1px 0 $black;
     font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
     height: 32px;
     margin-bottom: 8px;
@@ -1095,14 +1092,14 @@ a.icon {
 
 .av_title_bar_red {
     background: $primary-red;
-    background: -moz-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: -moz-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-red), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
-                color-stop(100%, #000));
-    background: -webkit-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -o-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -ms-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: linear-gradient(to bottom, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='#000000', GradientType=0)
+                color-stop(100%, $black));
+    background: -webkit-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+    background: -o-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+    background: -ms-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+    background: linear-gradient(to bottom, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$black', GradientType=0)
 }
 
 .av_title_bar_loose {
@@ -1141,9 +1138,9 @@ a.icon {
 }
 
 .vfont_small, .vfont_medium, .vfont_large {
-    font-family: "Vollkorn", serif;
+    font-family: $vollkorn;
     font-weight: normal;
-    color: #d3d3d3
+    color: $headings
 }
 
 .vfont_small {
@@ -1159,7 +1156,7 @@ a.icon {
 }
 
 .disabled {
-    color: #cccccc;
+    color: $light-gray;
     font-family: 'Vollkorn', serif;
     font-size: 16px;
     margin-bottom: 2px;
@@ -1200,7 +1197,7 @@ a.icon {
 }
 
 .av_list_element {
-    font: normal 16px Verdana, Geneva, sans-serif;
+    font: normal 16px $veranda;
     padding: 4px
 }
 
@@ -1218,7 +1215,7 @@ a.icon {
     display: inline-block;
     cursor: pointer;
     color: $white;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: $veranda;
     font-size: 1.4em;
     font-weight: bold;
     padding: 9px 23px;
@@ -1230,19 +1227,19 @@ a.icon {
 }
 
 .av_btn_success {
-    -moz-box-shadow: inset 0px 34px 0px -15px #3ab54b;
-    -webkit-box-shadow: inset 0px 34px 0px -15px #3ab54b;
-    box-shadow: inset 0px 34px 0px -15px #3ab54b;
-    background-color: #2da73f;
-    border: 1px solid #132413;
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    background-color: $av-success-background;
+    border: 1px solid $av-success-border;
     display: inline-block;
     cursor: pointer;
     color: $white;
-    text-shadow: 0px -1px 0px #1d7a2a
+    text-shadow: 0px -1px 0px $av-success-text-shadow
 }
 
 .av_btn_success:hover {
-    background-color: #32b343
+    background-color: $av-success-hover
 }
 
 .av_btn_success:active {
@@ -1251,16 +1248,16 @@ a.icon {
 }
 
 .av_btn_alternate {
-    -moz-box-shadow: inset 0px 34px 0px -15px #4b3ab5;
-    -webkit-box-shadow: inset 0px 34px 0px -15px #4b3ab5;
-    box-shadow: inset 0px 34px 0px -15px #4b3ab5;
-    background-color: #3f2da7;
-    border: 1px solid #1d1324;
-    text-shadow: 0px -1px 0px #2a1d7a
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    background-color: $av-btn-alt-background;
+    border: 1px solid $av-btn-alt-border;
+    text-shadow: 0px -1px 0px $av-btn-alt-text-shadow
 }
 
 .av_btn_alternate:hover {
-    background-color: #4332b3
+    background-color: $av-btn-alt-hover
 }
 
 .av_btn_alternate:active {
@@ -1269,16 +1266,16 @@ a.icon {
 }
 
 .av_btn_cancel {
-    -moz-box-shadow: inset 0px 34px 0px -15px #b54b3a;
-    -webkit-box-shadow: inset 0px 34px 0px -15px #b54b3a;
-    box-shadow: inset 0px 34px 0px -15px #b54b3a;
-    background-color: #a73f2d;
-    border: 1px solid #241d13;
-    text-shadow: 0px -1px 0px #7a2a1d
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    background-color: $av-btn-cancel-background;
+    border: 1px solid $av-btn-cancel-border;
+    text-shadow: 0px -1px 0px $av-btn-cancel-text-shadow
 }
 
 .av_btn_cancel:hover {
-    background-color: #b34332
+    background-color: $av-btn-cancel-hover
 }
 
 .av_btn_cancel:active {
@@ -1294,7 +1291,7 @@ a.icon {
 
 .av_alert {
     background-color: $primary-red;
-    font: normal 1.5em "Vollkorn", serif;
+    font: normal 1.5em $vollkorn;
     margin: 70px auto;
     text-align: center;
     width: 50%
@@ -1330,7 +1327,7 @@ a.icon {
 }
 
 #customView_wrapper {
-    marin: 0;
+    margin: 0;
     padding: 0
 }
 
@@ -1360,7 +1357,7 @@ a.icon {
 }
 
 .filterTitle {
-    font: bold 1.5em "Vollkorn", serif
+    font: bold 1.5em $vollkorn
 }
 
 #applyFilter {
@@ -1428,7 +1425,7 @@ a.icon {
 
 .paginate_button {
     float: left;
-    color: #CCCCCC;
+    color: $light-gray;
     box-sizing: border-box;
     display: inline-block;
     margin-left: 2px;
@@ -1438,25 +1435,25 @@ a.icon {
 }
 
 #adminBody .active {
-    background: #a90329;
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(44%, #8f0222), color-stop(100%, #6d0019));
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -o-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -ms-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)
+    background: $admin-background-light;
+    background: -moz-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $admin-background-light), color-stop(44%, $admin-background), color-stop(100%, $admin-background-dark));
+    background: -webkit-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -o-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -ms-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: linear-gradient(to bottom, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$admin-background-light', endColorstr='$admin-background-dark', GradientType=0)
 }
 
 .current {
-    background: #a90329;
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(44%, #8f0222), color-stop(100%, #6d0019));
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -o-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: -ms-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)
+    background: $admin-background-light;
+    background: -moz-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $admin-background-light), color-stop(44%, $admin-background), color-stop(100%, $admin-background-dark));
+    background: -webkit-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -o-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: -ms-linear-gradient(top, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    background: linear-gradient(to bottom, $admin-background-light 0%, $admin-background 44%, $admin-background-dark 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$admin-background-light', endColorstr='$admin-background-dark', GradientType=0)
 }
 
 #userTable th {
@@ -1472,13 +1469,13 @@ a.icon {
 
 #userTable_previous:before {
     content: "\f060 " " ";
-    font-family: FontAwesome;
+    font-family: $font-awesome;
     font-size: medium
 }
 
 #userTable_next:after {
     content: " " '\f061';
-    font-family: FontAwesome;
+    font-family: $font-awesome;
     font-size: medium
 }
 
@@ -1516,7 +1513,7 @@ a.icon {
 }
 
 .header_message {
-    font: normal 1.5em "Vollkorn", serif;
+    font: normal 1.5em $vollkorn;
     margin-top: 10px;
     padding: 6px 4px 4px 20px;
     position: absolute;
@@ -1550,7 +1547,7 @@ a.icon {
     border-radius: 0px 0px 10px 10px;
     -moz-border-radius: 0px 0px 10px 10px;
     -webkit-border-radius: 0px 0px 10px 10px;
-    color: #000000;
+    color: $black;
     min-height: 250px;
     padding: 10px
 }
@@ -1641,19 +1638,19 @@ a .notice_link {
 }
 
 .success {
-    color: green
+    color: $success
 }
 
 .processing {
-    color: darkred
+    color: $processing
 }
 
 .show_stable {
-    color: green
+    color: $show_stableeen
 }
 
 .place_arrow {
-    color: yellow
+    color: $place_arrow
 }
 
 .place_arrow:hover {
