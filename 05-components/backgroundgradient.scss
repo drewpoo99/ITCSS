@@ -1,0 +1,47 @@
+.athlete h1, .av_highlight, .video_eventType_title, .av_accordion_title_bar_red, #filterToggle, 
+.av_highlight_selected, .modal-header, .modal-footer, #av_addToWatchlist .widget-content, .av_dropdown, 
+.av_dropdown_content, .av_detail .panel-heading, .panel-primary > .panel-heading {
+    background: $primary-red ;
+    background: -moz-linear-gradient(left, $primary-red 0%, $black 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, $primary-red ), color-stop(100%, $black));
+    background: -webkit-linear-gradient(left, $primary-red 0%, $black 100%);
+    background: -o-linear-gradient(left, $primary-red 0%, $black 100%);
+    background: -ms-linear-gradient(left, $primary-red 0%, $black 100%);
+    background: linear-gradient(to right, $primary-red 0%, $black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-red', endColorstr='$black', GradientType=1)
+}
+
+#watchlistSpec, .av_widget-title, .av_team_roster > thead > tr, .av_dialog_widget_title, .av_dialog_widget_footer, 
+.av_dialog_widget_message button, #addNewWatchlistButton {
+    background-color: $primary-red ;
+    background: $primary-red ;
+    background: -moz-linear-gradient(top, $primary-red 0%, $black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-red ), color-stop(100%, $black));
+    background: -webkit-linear-gradient(top, $primary-red 0%, $black 100%);
+    background: -o-linear-gradient(top, $primary-red 0%, $black 100%);
+    background: -ms-linear-gradient(top, $primary-red 0%, $black 100%);
+    background: linear-gradient(to bottom, $primary-red 0%, $black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-red', endColorstr='$black', GradientType=0)
+}
+
+.av_message:nth-child(odd), .av_team_roster tbody > tr:nth-child(odd) {
+    background: $black;
+    background: -moz-linear-gradient(top, $darkest-gray 0%, $black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $darkest-gray), color-stop(100%, $black));
+    background: -webkit-linear-gradient(top, $darkest-gray 0%, $black 100%);
+    background: -o-linear-gradient(top, $darkest-gray 0%, $black 100%);
+    background: -ms-linear-gradient(top, $darkest-gray 0%, $black 100%);
+    background: linear-gradient(to bottom, $darkest-gray 0%, $black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$darkest-gray', endColorstr='$black', GradientType=0)
+}
+
+.av_message:nth-child(even), .av_team_roster tbody > tr:nth-child(even) {
+    background: $dark-gray;
+    background: -moz-linear-gradient(top, $dark-gray 0%, $black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $dark-gray), color-stop(100%, $black));
+    background: -webkit-linear-gradient(top, $dark-gray 0%, $black 100%);
+    background: -o-linear-gradient(top, $dark-gray 0%, $black 100%);
+    background: -ms-linear-gradient(top, $dark-gray 0%, $black 100%);
+    background: linear-gradient(to bottom, $dark-gray 0%, $black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark-gray', endColorstr='$black', GradientType=0)
+}

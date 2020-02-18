@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5 {
+    font-family: $vollkorn;
+    font-weight: normal;
+    color: $headings
+}
+
+h1, h2 {
+    font-size: 20px
+}
+
+body {
+    font-family: $veranda;
+    background-image: url(../img/avbackground.jpg);
+    background-size: cover;
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 35px
+}

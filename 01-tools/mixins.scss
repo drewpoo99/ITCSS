@@ -1,20 +1,20 @@
-@mixin av_important_size($size) {
+@mixin important_size($size) {
     width: $size !important
 }
-
-@mixin av_size($size) {
+@mixin size($size) {
     width: $size 
 }
-
-@mixin av_hzsize($left, $right) {
+@mixin hzsize($left, $right) {
     margin-left: $left;
     margin-right: $right;
 }
-
 @mixin center {
     text-align: center;
 }
-
 @mixin padding-left($size) {
     padding-left: $size
 }
+@mixin important_fontsize($size) {
+    font-size: $size !important
+}
+
