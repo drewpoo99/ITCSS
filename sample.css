@@ -591,7 +591,7 @@ a.icon {
     background: -ms-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
     background: linear-gradient(to bottom, #99a0a8 0%, #697077 36%, #13181c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99a0a8', endColorstr='#13181c', GradientType=0);
-    color: $white;
+    color: #ffffff;
     text-align: center;
     width: 100%
 }
