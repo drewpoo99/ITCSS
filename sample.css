@@ -1,94 +1,10 @@
-.athlete h1, .av_highlight, .video_eventType_title, .av_accordion_title_bar_red, #filterToggle, 
-.av_highlight_selected, .modal-header, .modal-footer, #av_addToWatchlist .widget-content, .av_dropdown, 
-.av_dropdown_content, .av_detail .panel-heading, .panel-primary > .panel-heading {
-    background: #7a021b;
-    background: -moz-linear-gradient(left, #7a021b 0%, #000 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #7a021b), color-stop(100%, #000));
-    background: -webkit-linear-gradient(left, #7a021b 0%, #000 100%);
-    background: -o-linear-gradient(left, #7a021b 0%, #000 100%);
-    background: -ms-linear-gradient(left, #7a021b 0%, #000 100%);
-    background: linear-gradient(to right, #7a021b 0%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='#000000', GradientType=1)
-}
-
-#watchlistSpec, .av_widget-title, .av_team_roster > thead > tr, .av_dialog_widget_title, .av_dialog_widget_footer, 
-.av_dialog_widget_message button, #addNewWatchlistButton {
-    background-color: #7a021b;
-    background: #7a021b;
-    background: -moz-linear-gradient(top, #7a021b 0%, #000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a021b), color-stop(100%, #000));
-    background: -webkit-linear-gradient(top, #7a021b 0%, #000 100%);
-    background: -o-linear-gradient(top, #7a021b 0%, #000 100%);
-    background: -ms-linear-gradient(top, #7a021b 0%, #000 100%);
-    background: linear-gradient(to bottom, #7a021b 0%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='#000000', GradientType=0)
-}
-
-.av_message:nth-child(odd), .av_team_roster tbody > tr:nth-child(odd) {
-    background: #000;
-    background: -moz-linear-gradient(top, #1D1D1D 0%, #000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1D1D1D), color-stop(100%, #000));
-    background: -webkit-linear-gradient(top, #1D1D1D 0%, #000 100%);
-    background: -o-linear-gradient(top, #1D1D1D 0%, #000 100%);
-    background: -ms-linear-gradient(top, #1D1D1D 0%, #000 100%);
-    background: linear-gradient(to bottom, #1D1D1D 0%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1D1D1D', endColorstr='#000', GradientType=0)
-}
-
-.av_message:nth-child(even), .av_team_roster tbody > tr:nth-child(even) {
-    background: #45484d;
-    background: -moz-linear-gradient(top, #45484d 0%, #000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #000));
-    background: -webkit-linear-gradient(top, #45484d 0%, #000 100%);
-    background: -o-linear-gradient(top, #45484d 0%, #000 100%);
-    background: -ms-linear-gradient(top, #45484d 0%, #000 100%);
-    background: linear-gradient(to bottom, #45484d 0%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0)
-}
-
 .navbar-nav {
-    border-bottom: 2px solid #7a021b
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: "Vollkorn", serif;
-    font-weight: normal;
-    color: #d3d3d3
-}
-
-h1, h2 {
-    font-size: 20px
+    border-bottom: 2px solid $primary-red
 }
 
 #registration, #loginbox {
     margin: 0 8.54701%;
     max-width: inherit
-}
-
-table thead .sorting, table thead .sorting_asc, table thead .sorting_desc {
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 20px
-}
-
-table thead .sorting:hover, table thead .sorting_asc:hover, table thead .sorting_desc:hover {
-    cursor: pointer
-}
-
-table thead .sorting {
-    background-image: url(../img/sort_both.png)
-}
-
-table thead .sorting_asc {
-    background-image: url(../img/sort_asc.png)
-}
-
-table thead .sorting_desc {
-    background-image: url(../img/sort_desc.png)
-}
-
-table input[type='checkbox'] {
-    margin: 0 4px
 }
 
 .form-inline > .radio {
@@ -116,8 +32,8 @@ a.icon {
 }
 
 #av_messageBar {
-    background: #060;
-    color: #FFFFFF;
+    background: $av-message-bar-background;
+    color: $white;
     display: none;
     font: bold 1.5em "Vollkorn", serif;
     height: 27px;
@@ -178,16 +94,6 @@ a.icon {
     margin-right: 20px
 }
 
-body {
-    font-family: Verdana, Geneva, sans-serif;
-    background-image: url(../img/avbackground.jpg);
-    background-size: cover;
-    background-color: black;
-    background-position: center top;
-    background-repeat: no-repeat;
-    padding-top: 35px
-}
-
 .container {
     background-color: #050505
 }
@@ -202,7 +108,7 @@ body {
     -webkit-border-radius: 24px;
     border-radius: 24px;
     background-clip: padding-box;
-    border: 2px solid #7a021b;
+    border: 2px solid $primary-red;
     box-shadow: none;
     max-width: inherit;
     min-width: 260px;
@@ -238,7 +144,7 @@ body {
     -webkit-border-radius: 24px;
     border-radius: 24px;
     background-clip: padding-box;
-    border: 2px solid #7a021b;
+    border: 2px solid $primary-red;
     top: 210px;
     height: 250px
 }
@@ -256,7 +162,7 @@ body {
     background-color: white;
     background: none;
     color: gray;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=1)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
 }
 
 .accordion {
@@ -326,7 +232,7 @@ body {
 
 .av_widget-title {
     box-shadow: 0 1px 0 #000;
-    color: #FFFFFF;
+    color: $white;
     font: 20px normal Verdana, Geneva, sans-serif;
     height: 32px;
     padding: 6px 2%
@@ -368,7 +274,7 @@ body {
 }
 
 .article-post a:hover, .article-post .more {
-    color: #7a021b;
+    color: $primary-red;
     background-color: inherit
 }
 
@@ -404,7 +310,7 @@ body {
 
 .widget-box {
     background: none;
-    border: 1px solid #7a021b
+    border: 1px solid $primary-red
 }
 
 .widget-content {
@@ -459,7 +365,7 @@ body {
 }
 
 .av_roster {
-    border: #7a021b 2px solid;
+    border: $primary-red 2px solid;
     position: absolute;
     top: 72px;
     z-index: 1;
@@ -476,7 +382,7 @@ body {
     border-radius: 4px;
     background-clip: padding-box;
     background-color: #fcf8e3;
-    color: #7a021b;
+    color: $primary-red;
     border: 1px solid #fbeed5;
     padding: 0 2px;
     font-weight: bold
@@ -504,7 +410,7 @@ body {
 }
 
 #search li {
-    color: #7a021b;
+    color: $primary-red;
     font-size: 11px
 }
 
@@ -517,12 +423,12 @@ body {
 
 #recentSearch li {
     font: bold 12px Verdana, Geneva, sans-serif;
-    color: #7a021b;
+    color: $primary-red;
     line-height: 150%
 }
 
 #recentSearch li:hover {
-    background-color: #7a021b;
+    background-color: $primary-red;
     color: white
 }
 
@@ -655,14 +561,14 @@ body {
 }
 
 .av_team_roster {
-    border: thin solid #7a021b;
+    border: thin solid $primary-red;
     margin-bottom: 20px;
     width: 100%;
     line-height: 200%
 }
 
 .av_team_roster > thead > tr {
-    background-color: #7a021b;
+    background-color: $primary-red;
     font-weight: bold
 }
 
@@ -672,7 +578,7 @@ body {
 
 .av_team_roster td {
     font-size: 12px;
-    border: thin solid #7a021b;
+    border: thin solid $primary-red;
     padding: 2px 4px
 }
 
@@ -685,13 +591,13 @@ body {
     background: -ms-linear-gradient(top, #99a0a8 0%, #697077 36%, #13181c 100%);
     background: linear-gradient(to bottom, #99a0a8 0%, #697077 36%, #13181c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99a0a8', endColorstr='#13181c', GradientType=0);
-    color: #FFFFFF;
+    color: $white;
     text-align: center;
     width: 100%
 }
 
 .av_team_roster th {
-    border: thin solid #7a021b;
+    border: thin solid $primary-red;
     font-weight: bold
 }
 
@@ -790,7 +696,7 @@ body {
 }
 
 .av_dialog_widget_title, .av_dialog_widget_footer {
-    background-color: #7a021b;
+    background-color: $primary-red;
     color: white;
     font: bold 20px Verdana, Geneva, sans-serif;
     min-height: 24px;
@@ -835,7 +741,7 @@ body {
 }
 
 .av_dialog_widget_message button, #addNewWatchlistButton {
-    background-color: #7a021b;
+    background-color: $primary-red;
     color: white
 }
 
@@ -927,7 +833,7 @@ body {
 }
 
 .ath_panel_team h3 {
-    border-bottom: #7a021b thin solid
+    border-bottom: $primary-red thin solid
 }
 
 .av_multivalue_row {
@@ -1058,7 +964,7 @@ body {
 
 .av_important {
     font: bold 1.4em helvetica, Verdana, sertif;
-    color: #7a021b
+    color: $primary-red
 }
 
 @font-face {
@@ -1070,7 +976,7 @@ body {
 
 .av_go {
     background-color: #006dcc;
-    color: #ffffff;
+    color: $white;
     background-image: -moz-linear-gradient(top, #092abe, #102ba4);
     background-image: -ms-linear-gradient(top, #092abe, #102ba4);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#092abe), to(#102ba4));
@@ -1082,13 +988,13 @@ body {
 
 .av_go:hover {
     background-color: #102BA4;
-    color: #7a021b;
+    color: $primary-red;
     transition: none
 }
 
 .av_save {
     background-color: #93f33d;
-    color: #ffffff;
+    color: $white;
     background-image: -moz-linear-gradient(top, #93f33d, #63a329);
     background-image: -ms-linear-gradient(top, #93f33d, #63a329);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#93f33d), to(#63a329));
@@ -1100,13 +1006,13 @@ body {
 
 .av_save:hover {
     background-color: #63A329;
-    color: #7a021b;
+    color: $primary-red;
     transition: none
 }
 
 .av_cancel {
-    color: #ffffff;
-    background-color: #7a021b;
+    color: $white;
+    background-color: $primary-red;
     background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
     background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
@@ -1188,14 +1094,14 @@ body {
 }
 
 .av_title_bar_red {
-    background: #7a021b;
-    background: -moz-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a021b), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
+    background: $primary-red;
+    background: -moz-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-red), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
                 color-stop(100%, #000));
-    background: -webkit-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -o-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: -ms-linear-gradient(top, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
-    background: linear-gradient(to bottom, #7a021b 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: -webkit-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: -o-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: -ms-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
+    background: linear-gradient(to bottom, $primary-red 0%, #b51d1b 50%, #ab2112 51%, #000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='#000000', GradientType=0)
 }
 
@@ -1278,7 +1184,7 @@ body {
 }
 
 .terms_of_use {
-    border: medium solid #7a021b;
+    border: medium solid $primary-red;
     height: 260px;
     overflow: scroll;
     overflow-x: hidden;
@@ -1311,7 +1217,7 @@ body {
     border-radius: 6px;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: $white;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 1.4em;
     font-weight: bold;
@@ -1320,7 +1226,7 @@ body {
 }
 
 .av_btn_success:hover, .av_btn_alternate:hover, .av_btn_cancel:hover {
-    color: #7a021b
+    color: $primary-red
 }
 
 .av_btn_success {
@@ -1331,7 +1237,7 @@ body {
     border: 1px solid #132413;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: $white;
     text-shadow: 0px -1px 0px #1d7a2a
 }
 
@@ -1387,7 +1293,7 @@ body {
 }
 
 .av_alert {
-    background-color: #7a021b;
+    background-color: $primary-red;
     font: normal 1.5em "Vollkorn", serif;
     margin: 70px auto;
     text-align: center;
@@ -1396,7 +1302,7 @@ body {
 
 .av_close_window:hover {
     cursor: pointer;
-    color: #7a021b
+    color: $primary-red
 }
 
 .pv_text:hover {
@@ -1404,7 +1310,7 @@ body {
 }
 
 .av_court {
-    background-color: #7a021b;
+    background-color: $primary-red;
     float: left;
     margin-right: 10px;
     text-align: center;
@@ -1554,11 +1460,11 @@ body {
 }
 
 #userTable th {
-    background-color: #7a021b
+    background-color: $primary-red
 }
 
 #userTable .dataTable th, .dataTable th {
-    color: #ffffff;
+    color: $white;
     font-weight: bold;
     font-size: 14px;
     text-align: left
@@ -1590,7 +1496,7 @@ body {
 }
 
 #inbox_menu li:hover {
-    background-color: #7a021b;
+    background-color: $primary-red;
     color: white;
     cursor: pointer
 }
@@ -1628,18 +1534,18 @@ body {
 }
 
 .av_panel_heading {
-    background-color: #7a021b;
+    background-color: $primary-red;
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
-    color: #ffffff;
+    color: $white;
     min-height: 40px;
     padding: 10px
 }
 
 .av_panel_body {
-    background-color: #ffffff;
+    background-color: $white;
     box-sizing: border-box;
     border-radius: 0px 0px 10px 10px;
     -moz-border-radius: 0px 0px 10px 10px;
@@ -1654,7 +1560,7 @@ body {
 }
 
 #av_email_sample {
-    background-color: #ffffff;
+    background-color: $white;
     color: black;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -1712,7 +1618,7 @@ a .notice_link {
 .av_detail {
     display: none;
     background-color: white;
-    border: 2px #7a021b solid;
+    border: 2px $primary-red solid;
     padding: 0;
     position: absolute;
     top: 55px;
@@ -1870,5 +1776,5 @@ a .notice_link {
 }
 
 .panel-primary {
-    border-color: #7a021b
+    border-color: $primary-red
 }

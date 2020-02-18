@@ -1,0 +1,25 @@
+table thead .sorting, table thead .sorting_asc, table thead .sorting_desc {
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 20px
+}
+
+table thead .sorting:hover, table thead .sorting_asc:hover, table thead .sorting_desc:hover {
+    cursor: pointer
+}
+
+table thead .sorting {
+    background-image: url(../img/sort_both.png)
+}
+
+table thead .sorting_asc {
+    background-image: url(../img/sort_asc.png)
+}
+
+table thead .sorting_desc {
+    background-image: url(../img/sort_desc.png)
+}
+
+table input[type='checkbox'] {
+    margin: 0 4px
+}
