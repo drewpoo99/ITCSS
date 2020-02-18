@@ -1,0 +1,63 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#search ul {
+    text-align: left;
+}
+
+#search li {
+    color: $primary-red;
+    font-size: 11px;
+}
+
+#search label {
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 3px;
+}
+
+#recentSearch li {
+    font: bold 12px $veranda;
+    color: $primary-red;
+    line-height: 150%;
+}
+
+#recentSearch li:hover {
+    background-color: $primary-red;
+    color: $white;
+}
+
+#av_search_results {
+    background-color: $black;
+}
+
+#search input[type="checkbox"] {
+    margin-right: 6px;
+    float: left;
+}
+
+#search .btn {
+    padding: 2px 14px;
+    background-image: none;
+    background-color: $black;
+    color: $av-label;
+    box-shadow: none
+}
+
+#search legend {
+    border: none;
+    border-bottom: thin $light-gray solid;
+    color: $light-gray;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 100%
+}
+
+#searchText {
+    width: 84%
+}
+
+#advancedSearch {
+    padding-left: 4%
+}
