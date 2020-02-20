@@ -1,0 +1,19 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_go {
+  background-color: $av-go-background-color;
+  color: $white;
+  background-image: -moz-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+  background-image: -ms-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-go-background-image), to($av-go-background-image-dark));
+  background-image: -webkit-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+  background-image: -o-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+  background-image: linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-go-background-image', endColorstr='$av-go-background-image-dark', GradientType=0)
+
+  .av_go:hover {
+  background-color: $av-go-background-image-dark;
+  color: $primary-red;
+  transition: none
+}
