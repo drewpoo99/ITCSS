@@ -1,4 +1,5 @@
 @use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
 
 #av_loginbox {
     background-color: $darker-black;
@@ -26,10 +27,39 @@
         float: none;
         text-align: left;
         padding-left: 20px;
-        width: auto
+        width: auto;
+        label {
+            float: none;
+        }
     }
     
 } 
-#av_loginbox .av_form_group label, #loginbox .av_form_group input {
-    float: none
+
+#loginbox {
+    margin: 0 8.54701%;
+    max-width: inherit;
+    .av_form_group input {
+        float: none
+    }
+}
+
+.av_form_group {
+    clear: both;
+    .line2x > & {
+        padding-top: 1%;
+    }
+    label {
+        width: 10em;
+    }
+    label, input {
+        float: left;
+        margin-right: 2%;
+    }
+    textarea {
+        width: 38%;
+    }
+}
+
+.av_form_heading {
+    clear: both
 }

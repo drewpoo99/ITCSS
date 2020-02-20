@@ -1,5 +1,6 @@
+@use '../01-tools/mixins.scss';
 
-
+//av_size
 .av_xmini {
     @include important_size(30px);
 }
@@ -56,6 +57,7 @@
     @include important_size(86%);
 }
 
+//av_hz
 .av_hzmini {
     @include  hzsize(2px, 2px);
 }
@@ -88,6 +90,7 @@
     @include center;
 }
 
+//av_info
 .av_info1 {
     @include size(8%);
 }
@@ -136,6 +139,7 @@
     @include size(100%);
 }
 
+//av_offset
 .av_offset1 {
     @include padding-left(7%);
 }
@@ -184,6 +188,7 @@
     @include padding-left(100%);
 }
 
+//av_font
 .av_font10 {
     @include important_fontsize(10px);
 }
@@ -202,4 +207,26 @@
 
 .av_font18 {
     @include important_fontsize(18px);
+}
+
+//Padding
+.av_padTop {
+    margin-top: 16px
+}
+
+//Margin
+.margin-right {
+    margin-right: 20px
+}
+
+.av_nomargin {
+    margin: 0 !important
+}
+
+.av_nomargin_top {
+    margin-top: 0 !important
+}
+
+.clear {
+    clear: both
 }

@@ -1,3 +1,6 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
 .athlete h1, .av_highlight, .video_eventType_title, .av_accordion_title_bar_red, #filterToggle, 
 .av_highlight_selected, .modal-header, .modal-footer, #av_addToWatchlist .widget-content, .av_dropdown, 
 .av_dropdown_content, .av_detail .panel-heading, .panel-primary > .panel-heading {

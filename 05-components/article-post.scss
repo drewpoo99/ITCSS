@@ -9,16 +9,21 @@
         font-weight: normal;
     }
 
-    a, .article-post a:link, .article-post a:active, .article-post a:visited {
-        color: $gray;
-    }
-
-    a:hover, .article-post .more {
-        color: $primary-red;
-        background-color: inherit;
-    }
-
-    a:hover .more {
-        color: $gray;
-    }
+    a {
+        &:link, &:active, &:visited {
+            color: $gray;
+        }
+        &:hover {
+            color: $primary-red;
+            background-color: inherit;
+            .more {
+                color: $gray;
+            }
+        }
+        
+        &.more {
+            color: $primary-red;
+            background-color: inherit;
+        }
+    } 
 }

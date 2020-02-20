@@ -1,3 +1,6 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
 h1, h2, h3, h4, h5 {
     font-family: $vollkorn;
     font-weight: normal;
