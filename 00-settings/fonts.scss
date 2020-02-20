@@ -7,3 +7,10 @@ $veranda: Verdana, Geneva, sans-serif;
 
 //font awesome fonts
 $font-awesome: FontAwesome;
+
+@font-face {
+    font-family: 'SofiaProLight';
+    src: url("../font/SofiaProLight-webfont.eot");
+    src: url("../font/SofiaProLight-webfont.svg#svgFontName") format("svg"), url("../font/SofiaProLight-webfont.ttf") format("truetype"), 
+        url("../font/SofiaProLight-webfont.woff") format("woff"), url("../font/SofiaProLight-webfont.woff2") format("woff2")
+}

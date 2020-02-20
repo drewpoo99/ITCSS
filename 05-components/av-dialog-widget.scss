@@ -1,12 +1,6 @@
 @use '../00-settings/colors.scss';
 @use '../00-settings/fonts.scss';
 
-.av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, 
-.av_dialog_widget_message h6 {
-    color: $black;
-    margin: 0;
-}
-
 .av_dialog_widget{
     display: none;
     margin: 10px auto;
@@ -15,16 +9,6 @@
     position: absolute;
     width: 350px;
     z-index: 200 !important;
-
-    #watchlist_add_new {
-        display: none;
-        margin: 10px auto;
-        top: 0;
-        left: -360px;
-        position: absolute;
-        width: 350px;
-        z-index: 200 !important
-    }
 
     .icon{
         margin: 0;
@@ -67,7 +51,15 @@
     font: normal 1.5em $vollkorn;
     padding: 3%;
     text-align: left;
-    line-height: 1
+    line-height: 1;
+
+    & h1, & h2, & h3, & h4, & h5, & h6 {
+        color: $black;
+        margin: 0;
+    }
+    #watchlist_add_new & {
+        text-align: center
+    }
 }
 
 #av_dialog_widget_message {
@@ -85,24 +77,12 @@
     text-align: center;
 
     button {
-        width: 15%
+        width: 15%;
+        background-color: $primary-red;
+        color: $white;
     }
 }
-
-#watchlist_add_new .av_dialog_widget_message {
-    text-align: center;
-
-    input{
-        color: $darkest-gray;
-    }
-
-    button{
-        color: $darkest-gray;  
-    }
-}
-
-
-.av_dialog_widget_message button, #addNewWatchlistButton {
+#addNewWatchlistButton {
     background-color: $primary-red;
     color: $white;
 }

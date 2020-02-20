@@ -7,11 +7,10 @@
   margin: 10px 0 0 0;
   width: 100%;
   z-index: 100;
-  padding-bottom: 2px
-}
-
-.av_dropdown:hover {
-  cursor: pointer
+  padding-bottom: 2px;
+  &:hover {
+    cursor: pointer
+  }
 }
 
 .av_dropdown_title_bar {

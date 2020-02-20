@@ -50,6 +50,10 @@
     text-align: center
 }
 
+.athlete_row :hover {
+    cursor: pointer
+}
+
 .user_image {
     max-width: 150px
 }
@@ -435,10 +439,6 @@
     display: none
 }
 
-.athlete_row :hover {
-    cursor: pointer
-}
-
 .modal {
     background-color: $black
 }
@@ -483,13 +483,7 @@
     padding: 10px
 }
 
-.av_dialog_widget_message h1, .av_dialog_widget_message h2, .av_dialog_widget_message h3, .av_dialog_widget_message h4, .av_dialog_widget_message h5, 
-.av_dialog_widget_message h6 {
-    color: $black;
-    margin: 0
-}
-
-.av_dialog_widget, #watchlist_add_new {
+#watchlist_add_new {
     display: none;
     margin: 10px auto;
     top: 0;
@@ -499,83 +493,13 @@
     z-index: 200 !important
 }
 
-.av_dialog_widget .icon, .av_dialog_widget .title, .av_dialog_widget .close {
-    margin: 0
-}
-
-.av_dialog_widget .icon, .av_dialog_widget .close {
-    color: white;
-    padding: 0 3%;
-    width: 10%
-}
-
-.av_dialog_widget .icon {
-    text-align: left;
-    float: left
-}
-
-.av_dialog_widget .title {
-    text-align: center;
-    float: left;
-    width: 67%
-}
-
-.av_dialog_widget .close {
-    text-align: right;
-    float: right
-}
-
-.av_dialog_widget_title, .av_dialog_widget_footer {
-    background-color: $primary-red;
-    color: white;
-    font: bold 20px $veranda;
-    min-height: 24px;
-    padding: 6px 0;
-    width: 100%
-}
-
-.av_dialog_widget_message {
-    background-color: white;
-    color: $black;
-    font: normal 1.5em $vollkorn;
-    padding: 3%;
-    text-align: left;
-    line-height: 1
-}
-
-#av_dialog_widget_message {
-    background-color: white;
-    color: $black;
-    display: table-cell;
-    font: normal 1.5em $vollkorn;
-    padding: 3%;
-    text-align: left;
-    line-height: 1;
-    vertical-align: middle
-}
-
-.av_dialog_widget_footer {
-    text-align: center
-}
-
-.av_dialog_widget_footer button {
-    width: 15%
-}
-
 #watchlist_add_new .av_dialog_widget_message {
     text-align: center
 }
 
-.av_dialog_widget_message input, .av_dialog_widget_message button {
-    color: #333
-}
-
-.av_dialog_widget_message button, #addNewWatchlistButton {
-    background-color: $primary-red;
-    color: white
-}
-
 #addNewWatchlistButton {
+    background-color: $primary-red;
+    color: $white;
     width: 75px;
     padding: 4px
 }
@@ -669,32 +593,7 @@
     float: right
 }
 
-#av_portrait {
-    position: relative
-}
 
-#av_portrait > img {
-    float: none
-}
-
-#editProfilePicture {
-    display: none;
-    position: absolute;
-    bottom: 11px;
-    left: 11px;
-    background-color: #FFF;
-    font-weight: bold;
-    color: black;
-    padding: 1px 10px;
-    margin: 0;
-    -webkit-box-shadow: 3px 3px 5px $box-shadow-gray;
-    -moz-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
-    box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75)
-}
-
-#av_portrait:hover > #editProfilePicture {
-    display: block
-}
 
 .av_game {
     background-color: $av-game;
@@ -727,32 +626,6 @@
     font: bold 1.4em helvetica, Verdana, sertif;
     color: $primary-red
 }
-
-@font-face {
-    font-family: 'SofiaProLight';
-    src: url("../font/SofiaProLight-webfont.eot");
-    src: url("../font/SofiaProLight-webfont.svg#svgFontName") format("svg"), url("../font/SofiaProLight-webfont.ttf") format("truetype"), 
-        url("../font/SofiaProLight-webfont.woff") format("woff"), url("../font/SofiaProLight-webfont.woff2") format("woff2")
-}
-
-.av_go {
-    background-color: $av-go-background-color;
-    color: $white;
-    background-image: -moz-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-    background-image: -ms-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-go-background-image), to($av-go-background-image-dark));
-    background-image: -webkit-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-    background-image: -o-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-    background-image: linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-go-background-image', endColorstr='$av-go-background-image-dark', GradientType=0)
-}
-
-.av_go:hover {
-    background-color: $av-go-background-image-dark;
-    color: $primary-red;
-    transition: none
-}
-
 .av_save {
     background-color: $av-save-background;
     color: $white;
@@ -762,13 +635,13 @@
     background-image: -webkit-linear-gradient(top, $av-save-background, $av-save-background-image);
     background-image: -o-linear-gradient(top, $av-save-background, $av-save-background-image);
     background-image: linear-gradient(top, $av-save-background, $av-save-background-image);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', endColorstr='$av-save-background-image', GradientType=0)
-}
-
-.av_save:hover {
-    background-color: $av-save-hover;
-    color: $primary-red;
-    transition: none
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', 
+            endColorstr='$av-save-background-image', GradientType=0);
+    &:hover {
+        background-color: $av-save-hover;
+        color: $primary-red;
+        transition: none
+    }
 }
 
 .av_cancel {
@@ -780,56 +653,13 @@
     background-image: -webkit-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
     background-image: -o-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
     background-image: linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', endColorstr='$av-cancel-gradient-dark', GradientType=0)
-}
-
-.av_cancel:hover {
-    background-color: $av-cancel-hover;
-    color: $black;
-    transition: none
-}
-
-.av_dropdown {
-    border: none;
-    color: #DDD;
-    margin: 10px 0 0 0;
-    width: 100%;
-    z-index: 100;
-    padding-bottom: 2px
-}
-
-.av_dropdown:hover {
-    cursor: pointer
-}
-
-.av_dropdown_title_bar {
-    color: $headings;
-    font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
-    height: 32px
-}
-
-.av_dropdown_trigger, .av_accordion_trigger {
-    background-image: url(../img/DropdownArrow.gif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-right: thin solid $headings;
-    float: left;
-    width: 35px;
-    height: 32px
-}
-
-.av_dropdown_title {
-    float: left;
-    line-height: 20px;
-    padding: 8px 0 0px 10px
-}
-
-.av_dropdown_content {
-    display: none;
-    padding: 4px;
-    position: absolute;
-    width: 100%;
-    z-index: 150
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', 
+            endColorstr='$av-cancel-gradient-dark', GradientType=0);
+    &:hover {
+        background-color: $av-cancel-hover;
+        color: $black;
+        transition: none;
+    }
 }
 
 .av_accordion_title_bar {

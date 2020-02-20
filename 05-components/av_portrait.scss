@@ -1,14 +1,27 @@
 @use '../00-settings/colors.scss';
 @use '../00-settings/fonts.scss';
 
+#editProfilePicture {
+  display: none;
+  position: absolute;
+  bottom: 11px;
+  left: 11px;
+  background-color: #FFF;
+  font-weight: bold;
+  color: black;
+  padding: 1px 10px;
+  margin: 0;
+  -webkit-box-shadow: 3px 3px 5px $box-shadow-gray;
+  -moz-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.75)
+}
+
 #av_portrait {
-  position: relative
-}
-
-#av_portrait > img {
-  float: none
-}
-
-#av_portrait:hover > #editProfilePicture {
-  display: block
+  position: relative;
+  & > img {
+    float: none
+  }
+  &:hover > #editProfilePicture {
+    display: block
+  }
 }

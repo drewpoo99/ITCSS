@@ -10,11 +10,11 @@
   background-image: -webkit-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
   background-image: -o-linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
   background-image: linear-gradient(top, $av-go-background-image, $av-go-background-image-dark);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-go-background-image', endColorstr='$av-go-background-image-dark', GradientType=0);
-
-    &:hover {
-    background-color: $av-go-background-image-dark;
-    color: $primary-red;
-    transition: none
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-go-background-image', 
+          endColorstr='$av-go-background-image-dark', GradientType=0);
+  &:hover {
+      background-color: $av-go-background-image-dark;
+      color: $primary-red;
+      transition: none
   }
 }
