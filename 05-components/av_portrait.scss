@@ -1,0 +1,14 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#av_portrait {
+  position: relative
+}
+
+#av_portrait > img {
+  float: none
+}
+
+#av_portrait:hover > #editProfilePicture {
+  display: block
+}
