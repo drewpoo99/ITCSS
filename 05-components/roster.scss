@@ -1,4 +1,17 @@
 @use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_roster {
+    border: $primary-red 2px solid;
+    position: absolute;
+    top: 72px;
+    z-index: 1;
+    background-color: $watch-list-border;
+    width: 80%;
+    table, tr, td {
+        border: none;
+    }
+}
 
 .av_team_roster{
     border: thin solid $primary-red;
@@ -16,7 +29,7 @@
     th{
         font-size: 11px;
         border: thin solid $primary-red;
-        font-weight: bold
+        font-weight: bold;
     }
 
     td{
@@ -37,4 +50,8 @@
         text-align: center;
         width: 100%
     }
+}
+
+#awayTeamRoster {
+    float: right
 }

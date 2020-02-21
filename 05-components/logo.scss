@@ -1,0 +1,13 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#logo, .logo {
+    margin: 10px 0px 5px 10px;
+    background-image: url("../img/athlete-logo.png");
+    background-size: 268px 100px;
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 86px;
+    float: left;
+    text-indent: -2000px
+}

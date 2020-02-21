@@ -230,3 +230,24 @@
 .clear {
     clear: both
 }
+
+.smallest {
+    font-size: 10px
+}
+
+.vfont {
+    &_small, &_medium, &_large {
+        font-family: $vollkorn;
+        font-weight: normal;
+        color: $headings;
+    }
+    &_small {
+        font-size: 1em
+    }
+    &_medium {
+        font-size: 1.5em
+    }
+    &_large {
+        font-size: 2em
+    }
+}

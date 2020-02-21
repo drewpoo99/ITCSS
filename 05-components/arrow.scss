@@ -1,0 +1,24 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.place_arrow {
+    color: $place_arrow;
+
+    &:hover {
+        cursor: pointer
+    }
+}
+
+#arrow_container {
+    position: relative
+}
+
+#vb_arrow {
+    position: absolute;
+    display: none;
+    z-index: 100
+}
+
+#positionArrow {
+    display: none
+}

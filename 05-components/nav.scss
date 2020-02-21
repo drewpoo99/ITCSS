@@ -1,0 +1,22 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.navbar-nav {
+    border-bottom: 2px solid $primary-red
+}
+
+.nav {
+    margin-bottom: 0;
+
+    a.disabled-link {
+        color: $gray;
+        cursor: default;        
+        &:hover {
+            background-color: white;
+            background: none;
+            color: $gray;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
+        }
+    }
+    
+}

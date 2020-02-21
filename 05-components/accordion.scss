@@ -1,0 +1,51 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.accordion {
+    margin-bottom: 0;
+    &-body {
+        padding: 0 4%
+    }
+    &-group {
+        border: none
+    }
+    &-inner {
+        padding-top: 0
+    }
+}
+
+.av_accordion {
+    &_title_bar {
+        box-shadow: 0 1px 0 $black;
+        background-color: $black;
+        background-image: -webkit-gradient(linear, 0 0%, 0 100%, from($video-event-title), to($black));
+        background-image: -webkit-linear-gradient(top, $video-event-title 0%, $black 100%);
+        background-image: -moz-linear-gradient(top, $video-event-title 0%, $black 100%);
+        background-image: -ms-linear-gradient(top, $video-event-title 0%, $black 100%);
+        background-image: -o-linear-gradient(top, $video-event-title 0%, $black 100%);
+        background-image: linear-gradient(top, $video-event-title 0%, $black 100%);
+        font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        height: 36px;
+        width: 100%
+    }
+    &_title_bar_red {
+        box-shadow: 0 1px 0 $black;
+        font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        height: 32px;
+        margin-bottom: 8px;
+        width: 100%
+    }
+    &_trigger:hover {
+        cursor: pointer
+    }
+    &_title {
+        padding-left: 45px;
+        padding-top: 6px
+    }
+    &_indent {
+        padding-left: 35px
+    }
+    &_section {
+        overflow: auto
+    }
+}

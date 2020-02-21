@@ -1,0 +1,29 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_header_right {
+    float: right
+}
+
+.av_header_left {
+    float: left
+}
+
+.av_header_icons {
+    margin: 10px 0;
+    padding: 6px 0;
+    .icon {
+        padding: 7px
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+
+    p {
+        font-family: $veranda;
+        font-size: 10px;
+        line-height: 12px
+    }
+}

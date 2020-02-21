@@ -1,0 +1,16 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.terms_of_use {
+    border: medium solid $primary-red;
+    height: 260px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    p {
+        font-size: 10px
+    }
+    h1, h2 {
+        font-size: 12px
+    }
+}

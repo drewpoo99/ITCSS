@@ -1,0 +1,50 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#av_messageBar {
+    background: $av-message-bar-background;
+    color: $white;
+    display: none;
+    font: bold 1.5em $vollkorn;
+    height: 27px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%
+}
+
+.av_message {
+    padding: 2px 1% 16px;
+    p {
+        margin: 0
+    }
+}
+
+.av_error_message {
+    clear: both;
+    color: $av-error-message;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 4px;
+    width: 80%
+}
+
+.header_message {
+    font: normal 1.5em $vollkorn;
+    margin-top: 10px;
+    padding: 6px 4px 4px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%
+}
+
+.message_line:hover {
+    cursor: pointer
+}
+
+.show_message {
+    color: green;
+    display: none
+}

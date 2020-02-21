@@ -1,0 +1,27 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_bookmark_card {
+    margin: 4px 0;
+    padding: 0;
+
+    button {
+        margin-right: 4px
+    }
+}
+
+.av_video_bookmark {
+    width: 100%;
+    overflow: auto
+}
+
+#add_bookmark {
+    margin-top: -6px
+}
+
+.remove_bkmk {
+    color: darkred;
+    &:hover {
+        cursor: pointer
+    }
+}

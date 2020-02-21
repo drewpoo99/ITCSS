@@ -1,0 +1,35 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#av_dashboard .widget-box {
+    border: none
+}
+
+.av_widget {
+    height: 415px;
+    overflow: auto;
+    padding: 0 1%;
+    &-box {
+        margin: 16px auto
+    }
+    &-title {
+        box-shadow: 0 1px 0 $black;
+        color: $white;
+        font: 20px normal $veranda;
+        height: 32px;
+        padding: 6px 2%
+    }
+}
+
+.widget {
+    &-box {
+        background: none;
+        border: 1px solid $primary-red
+    }
+    &-content {
+        padding: 10px;
+        overflow: auto
+    }
+}
+
+

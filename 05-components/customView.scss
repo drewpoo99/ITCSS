@@ -1,0 +1,19 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#customView {
+    th, td {
+        text-align: center
+    }
+    tr:hover {
+        cursor: pointer
+    }
+    
+    &_wrapper {
+        margin: 0;
+        padding: 0;
+        table {
+            margin: 0
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#clearTeams, #clearCourts, #clearTimes {
+    margin: 5px auto
+}
+
+#applyFilter {
+    margin-top: -6px
+}
+
+#filterToggle {
+    background-image: url("../img/DropdownArrow.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin: 0;
+    &x::before {
+        content: '&nbsp;';
+        background-image: url("../img/DropdownArrow.gif");
+        width: 15px
+    }
+    &:hover {
+        cursor: pointer
+    }
+}
+
+.filter {
+    float: left;
+    display: none;
+    margin: 0 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    &_date {
+        clear: both;
+        font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        text-align: center;
+        margin: 10px 0
+    }
+    &Block {
+        float: left;
+        position: relative;
+        z-index: 100
+    }
+    &Title {
+        font: bold 1.5em $vollkorn
+    }
+    &Option {
+        float: left;
+        width: 50%;
+        input {
+            margin: 0 10px;
+            padding-right: 4px
+        }
+    }
+}

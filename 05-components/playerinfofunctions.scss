@@ -1,0 +1,177 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_player {
+    text-align: left !important
+}
+
+.icon:hover {
+    cursor: pointer
+}
+
+.av_player_measurements {
+    display: none
+}
+
+.av_info {
+    &_tiny {
+        font-size: 11px;
+        a {
+            font-size: 11px
+        }
+    }
+    &_text {
+        font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        padding-top: 4px;
+        a {
+            font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+            padding-top: 4px
+        }
+    }
+    &_important {
+        font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        a {
+            font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+        }
+    }
+}
+
+.av_important {
+    font: bold 1.4em helvetica, Verdana, sertif;
+    color: $primary-red
+}
+.av_save {
+    background-color: $av-save-background;
+    color: $white;
+    background-image: -moz-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -ms-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-save-background), to($av-save-background-image));
+    background-image: -webkit-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -o-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: linear-gradient(top, $av-save-background, $av-save-background-image);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', 
+            endColorstr='$av-save-background-image', GradientType=0);
+    &:hover {
+        background-color: $av-save-hover;
+        color: $primary-red;
+        transition: none
+    }
+}
+
+.av_cancel {
+    color: $white;
+    background-color: $primary-red;
+    background-image: -moz-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -ms-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-cancel-gradient), to($av-cancel-gradient-dark));
+    background-image: -webkit-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -o-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', 
+            endColorstr='$av-cancel-gradient-dark', GradientType=0);
+    &:hover {
+        background-color: $av-cancel-hover;
+        color: $black;
+        transition: none;
+    }
+}
+
+#av_athleteEntry fieldset {
+    float: left;
+    margin: 10px 2px;
+    .tab {
+        border: $tab-widget-legend thin solid;
+        -webkit-border-top-left-radius: 17px;
+        -webkit-border-top-right-radius: 17px;
+        -moz-border-radius-topleft: 17px;
+        -moz-border-radius-topright: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        padding: 0 5%;
+        min-width: 100px;
+        text-align: center;
+        color: white
+    }
+    .current {
+        border-bottom: none
+    }
+}
+
+.av_share_profile_video {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    background-color: #fcf8e3;
+    color: $primary-red;
+    border: 1px solid #fbeed5;
+    padding: 0 2px;
+    font-weight: bold
+}
+
+.av_tab_widget {
+    legend {
+        float: left;
+        border: $tab-widget-legend thin solid;
+        -webkit-border-top-left-radius: 17px;
+        -webkit-border-top-right-radius: 17px;
+        -moz-border-radius-topleft: 17px;
+        -moz-border-radius-topright: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        padding: 0 5%;
+        min-width: 100px;
+        text-align: center;
+        color: white
+    }
+    fieldset {
+        margin: 10px 12px
+    }
+}
+.av_controls {
+    div {
+        float: left;
+    }
+    h1 {
+        margin: 0
+    }
+}
+
+.posRel {
+    position: relative
+}
+
+.tab-content {
+    overflow: visible;
+    width: 100%
+}
+
+.av_multivalue {
+    font: normal 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    margin-left: 5%;
+    width: 45%;
+    label {
+        margin-right: 4px;
+        text-align: right;
+        width: 40%
+    }
+    &_row {
+        margin-top: 0
+    }
+}
+
+#measureSelect, #teamSelect {
+    margin-right: 8%;
+    float: right
+}
+
+#positionSelect {
+    float: right
+}
+
+.av_game {
+    background-color: $av-game;
+    font-family: $veranda;
+    font-size: 14px
+}
+

@@ -1,0 +1,58 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_alert {
+    background-color: $primary-red;
+    font: normal 1.5em $vollkorn;
+    margin: 70px auto;
+    text-align: center;
+    width: 50%
+}
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    &-heading {
+        font-weight: bold;
+        line-height: 20px;
+        text-rendering: optimizelegibility
+    }
+    &-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        .alert-success .alert-heading {
+            color: #7ccf34
+        }
+    }
+    &-danger, &-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #a42e08;
+        .alert-heading {
+            color: #a42e08;
+        }
+    }
+    &-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        .alert-heading {
+            color: #0929be
+        }
+    }
+}
+#save {
+    margin-top: -5px
+}
+
+.success {
+    color: $success
+}
+
+.processing {
+    color: $processing
+}
+
+.show_stable {
+    color: $show_stablee
+}

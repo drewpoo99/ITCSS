@@ -3,13 +3,19 @@
 
 .modal {
     background-color: $black;
-}
-
-.modal-dialog h1 {
-    background-color: transparent;
-    font: bold 2.1em $vollkorn;
-    margin: -5px 5px 0;
-    padding: 0
+    &-dialog h1 {
+        background-color: transparent;
+        font: bold 2.1em $vollkorn;
+        margin: -5px 5px 0;
+        padding: 0
+    }
+    &-footer {
+        border-radius: 0px 0px 24px 24px;
+        -moz-border-radius: 0px 0px 24px 24px;
+        -webkit-border-radius: 0px 0px 24px 24px;
+        height: 30px;
+        padding: 10px
+    }
 }
 
 .modal-header {
@@ -35,12 +41,4 @@
         color: $white;
         width: 30px
     }
-}
-
-.modal-footer {
-    border-radius: 0px 0px 24px 24px;
-    -moz-border-radius: 0px 0px 24px 24px;
-    -webkit-border-radius: 0px 0px 24px 24px;
-    height: 30px;
-    padding: 10px
 }

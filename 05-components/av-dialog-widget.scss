@@ -1,6 +1,17 @@
 @use '../00-settings/colors.scss';
 @use '../00-settings/fonts.scss';
 
+#av_dialog_widget_message {
+    background-color: $white;
+    color: $black;
+    display: table-cell;
+    font: normal 1.5em $vollkorn;
+    padding: 3%;
+    text-align: left;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 .av_dialog_widget{
     display: none;
     margin: 10px auto;
@@ -34,55 +45,42 @@
         text-align: right;
         float: right;
     }
-}
-
-.av_dialog_widget_title, .av_dialog_widget_footer {
-    background-color: $primary-red;
-    color: $white;
-    font: bold 20px $veranda;
-    min-height: 24px;
-    padding: 6px 0;
-    width: 100%
-}
-
-.av_dialog_widget_message {
-    background-color: $white;
-    color: $black;
-    font: normal 1.5em $vollkorn;
-    padding: 3%;
-    text-align: left;
-    line-height: 1;
-
-    & h1, & h2, & h3, & h4, & h5, & h6 {
+    &_message {
+        background-color: $white;
         color: $black;
-        margin: 0;
+        font: normal 1.5em $vollkorn;
+        padding: 3%;
+        text-align: left;
+        line-height: 1;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: $black;
+            margin: 0;
+        }
+        #watchlist_add_new & {
+            text-align: center
+        }
     }
-    #watchlist_add_new & {
-        text-align: center
-    }
-}
-
-#av_dialog_widget_message {
-    background-color: $white;
-    color: $black;
-    display: table-cell;
-    font: normal 1.5em $vollkorn;
-    padding: 3%;
-    text-align: left;
-    line-height: 1;
-    vertical-align: middle;
-}
-
-.av_dialog_widget_footer {
-    text-align: center;
-
-    button {
-        width: 15%;
+    &_title {
         background-color: $primary-red;
         color: $white;
+        font: bold 20px $veranda;
+        min-height: 24px;
+        padding: 6px 0;
+        width: 100%;
     }
-}
-#addNewWatchlistButton {
-    background-color: $primary-red;
-    color: $white;
+    &_footer {
+        background-color: $primary-red;
+        color: $white;
+        font: bold 20px $veranda;
+        min-height: 24px;
+        padding: 6px 0;
+        width: 100%;
+        text-align: center;
+        button {
+            width: 15%;
+            background-color: $primary-red;
+            color: $white;
+        }
+    }
 }

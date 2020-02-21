@@ -1,0 +1,47 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.primaryTeam::after {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-clip: padding-box;
+    background: $primary-team-background;
+    background: -moz-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-team-background), color-stop(44%, $primary-team-background-dark), color-stop(100%, $primary-team-background-darker));
+    background: -webkit-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -o-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: -ms-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    background: linear-gradient(to bottom, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-team-background', endColorstr='$primary-team-background-darker', GradientType=0);
+    border: 0px solid $black;
+    content: "Primary";
+    margin-left: 10px;
+    margin-top: -4px;
+    padding: 3px 12px
+}
+
+.av_team {
+    margin: 10px 0 0;
+    img {
+        max-height: 30px
+    }
+}
+
+.ath_panel_team {
+    label {
+        margin-right: 4px;
+        text-align: right;
+        width: 20%
+    }
+    h3 {
+        border-bottom: $primary-red thin solid
+    }
+}
+
+.coach-dash-team {
+    th, td {
+        font-size: 11px;
+        line-height: 10px;
+    }
+}
+

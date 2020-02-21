@@ -1,0 +1,30 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_panel {
+    margin: 10px 0;
+    &_heading {
+        background-color: $primary-red;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        color: $white;
+        min-height: 40px;
+        padding: 10px
+    }
+    &_body {
+        background-color: $white;
+        box-sizing: border-box;
+        border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        color: $black;
+        min-height: 250px;
+        padding: 10px
+    }
+}
+
+.panel-primary {
+    border-color: $primary-red
+}

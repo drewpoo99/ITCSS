@@ -1,0 +1,35 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#av_pop {
+    background: $black;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    z-index: 200 !important
+}
+
+#av_bkgnd_pop, .av_bkgnd_pop {
+    opacity: 0.55;
+    filter: alpha(opacity=55.0);
+    background: $black;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.av_bkgnd_pop {
+    display: block
+}
+
+#av_pop_close, .av_close_dialog {
+    float: right
+}
+
+.av_pop {
+    display: none
+}

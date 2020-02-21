@@ -1,0 +1,18 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.glyphicon {
+    &-bookmark {
+        color: #2e6da4
+    }
+    &-eye-open {
+        color: green
+    }
+    &-eye-close {
+        color: #a42e08
+    }
+    &-none:before {
+        content: "\2122";
+        color: transparent !important
+    }
+}

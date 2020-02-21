@@ -1,69 +1,26 @@
-.navbar-nav {
-    border-bottom: 2px solid $primary-red
-}
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
 
-#registration, #loginbox {
-    margin: 0 8.54701%;
-    max-width: inherit
+.user_image {
+    max-width: 150px
 }
 
 .form-inline > .radio {
     min-width: 12%
 }
 
-#av_messageBar {
-    background: $av-message-bar-background;
-    color: $white;
-    display: none;
-    font: bold 1.5em $vollkorn;
-    height: 27px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%
-}
-
-#logo, .logo {
-    margin: 10px 0px 5px 10px;
-    background-image: url("../img/athlete-logo.png");
-    background-size: 268px 100px;
-    background-repeat: no-repeat;
-    width: 268px;
-    height: 86px;
-    float: left;
-    text-indent: -2000px
-}
-
-.footer {
-    text-align: center;
-    padding: 30px 0;
-
-    p {
-        font-family: $veranda;
-        font-size: 10px;
-        line-height: 12px
+.athlete_row {
+    td {
+        text-align: center
     }
-}
 
-.athlete_row td {
-    text-align: center
-}
-
-.athlete_row :hover {
-    cursor: pointer
-}
-
-.user_image {
-    max-width: 150px
+    &:hover {
+        cursor: pointer
+    }
 }
 
 .recent-posts > section {
     clear: left
-}
-
-.smallest {
-    font-size: 10px
 }
 
 .darker_black {
@@ -72,11 +29,6 @@
 
 .container {
     background-color: $container-background
-}
-
-.av_registration {
-    text-align: center;
-    padding: 4%
 }
 
 .av_password_reset {
@@ -89,112 +41,6 @@
     height: 250px
 }
 
-.nav {
-    margin-bottom: 0;
-
-    a.disabled-link {
-        color: $gray;
-        cursor: default;        
-        &:hover {
-            background-color: white;
-            background: none;
-            color: $gray;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
-        }
-    }
-    
-}
-
-.accordion {
-    margin-bottom: 0
-}
-
-.accordion-body {
-    padding: 0 4%
-}
-
-.av_widget {
-    height: 415px;
-    overflow: auto;
-    padding: 0 1%
-}
-
-.av_widget-box {
-    margin: 16px auto
-}
-
-#av_addToWatchlist .widget-title:hover, .av_addToWatchlist .widget-content p {
-    cursor: pointer
-}
-
-.av_watchlist_edit, .av_watchlist_delete {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    font-size: 18px;
-    float: right;
-    padding: 4px
-}
-
-.av_watchlist_athlete {
-    font: normal 16px $veranda;
-    padding-bottom: 6px;
-    width: 100%
-}
-
-#watchlistSpec {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    border: $watch-list-border thin solid;
-    color: white;
-    font: bold 20px $veranda;
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    width: 30%;
-    z-index: 2
-}
-
-#av_watchlist {
-    a.icon {
-        float: right;
-        padding: 7px;
-        width: auto;
-    }
-    a.av_icon_right {
-        float: right;
-        padding: 0
-    }
-}
-
-#av_dashboard .widget-box {
-    border: none
-}
-
-.av_widget-title {
-    box-shadow: 0 1px 0 $black;
-    color: $white;
-    font: 20px normal $veranda;
-    height: 32px;
-    padding: 6px 2%
-}
-
-.av_message {
-    padding: 2px 1% 16px;
-    p {
-        margin: 0
-    }
-}
-
-.av_error_message {
-    clear: both;
-    color: $av-error-message;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 4px;
-    width: 80%
-}
-
 .av_date {
     font-size: 11px;
     color: #DDDDDD
@@ -204,485 +50,20 @@
     padding: 6px 1%
 }
 
-.widget-box {
-    background: none;
-    border: 1px solid $primary-red
-}
-
-.widget-content {
-    padding: 10px;
-    overflow: auto
-}
-
-.av_label, .av_label_sm {
-    font-weight: normal;
-    color: $av-label
-}
-
-.av_label {
-    font-size: 18px
-}
-
-.av_label_sm {
-    font-size: 9px
-}
-
-.av_control_label {
-    float: left;
-    text-align: right;
-    padding-right: 10px
-}
-
-.av_team img {
-    max-height: 30px
-}
-
-.primaryTeam::after {
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    background-clip: padding-box;
-    background: $primary-team-background;
-    background: -moz-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-team-background), color-stop(44%, $primary-team-background-dark), color-stop(100%, $primary-team-background-darker));
-    background: -webkit-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
-    background: -o-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
-    background: -ms-linear-gradient(top, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
-    background: linear-gradient(to bottom, $primary-team-background 0%, $primary-team-background-dark 44%, $primary-team-background-darker 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-team-background', endColorstr='$primary-team-background-darker', GradientType=0);
-    border: 0px solid $black;
-    content: "Primary";
-    margin-left: 10px;
-    margin-top: -4px;
-    padding: 3px 12px
-}
-
 .av_contained {
     position: relative
 }
-
-.av_roster {
-    border: $primary-red 2px solid;
-    position: absolute;
-    top: 72px;
-    z-index: 1;
-    background-color: $watch-list-border;
-    width: 80%;
-    table, tr, td {
-        border: none;
-    }
-}
-
-.av_share_profile_video {
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    background-clip: padding-box;
-    background-color: #fcf8e3;
-    color: $primary-red;
-    border: 1px solid #fbeed5;
-    padding: 0 2px;
-    font-weight: bold
-}
-
-#video_info_detail .av_share_profile_video {
-    padding-top: 8px;
-    padding-bottom: 8px
-}
-
 .nonAV {
     background-image: url("../img/pencil.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left center;
-    padding-left: 26px
-}
-
-.nonAV:hover {
-    cursor: pointer
-}
-
-#av_pop {
-    background: $black;
-    display: none;
-    position: fixed;
-    _position: absolute;
-    z-index: 200 !important
-}
-
-#av_bkgnd_pop, .av_bkgnd_pop {
-    opacity: 0.55;
-    filter: alpha(opacity=55.0);
-    background: $black;
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    _position: absolute;
-    top: 0;
-    width: 100%
-}
-
-.av_bkgnd_pop {
-    display: block
-}
-
-#av_pop_close, .av_close_dialog {
-    float: right
-}
-
-.coach-dash-team th, .coach-dash-team td {
-    font-size: 11px;
-    line-height: 10px
-}
-
-.av_team {
-    margin: 10px 0 0
-}
-
-.av_player {
-    text-align: left !important
-}
-
-.av_header_right {
-    float: right
-}
-
-.av_header_left {
-    float: left
-}
-
-.av_header_icons {
-    margin: 10px 0;
-    padding: 6px 0
-}
-
-.av_header_icons .icon {
-    padding: 7px
-}
-
-.icon:hover {
-    cursor: pointer
-}
-
-#av_addToWatchlist .widget-title {
-    border-bottom: none
-}
-
-#av_addToWatchlist .widget-title span.icon {
-    margin-right: 8px
-}
-
-#av_addToWatchlist .widget-content {
-    padding: 0 5px 5px
-}
-
-#av_addToWatchlist p {
-    padding-left: 25px;
-    background-image: url(../img/plus-sign.png);
-    background-repeat: no-repeat;
-    background-position: 0 2px
-}
-
-#av_addToWatchlist .av-message span {
-    padding-left: 25px
-}
-
-.posRel {
-    position: relative
-}
-
-#awayTeamRoster {
-    float: right
-}
-
-.av_team_roster {
-    border: thin solid $primary-red;
-    margin-bottom: 20px;
-    width: 100%;
-    line-height: 200%
-}
-
-.av_team_roster > thead > tr {
-    background-color: $primary-red;
-    font-weight: bold
-}
-
-.av_team_roster th {
-    font-size: 11px
-}
-
-.av_team_roster td {
-    font-size: 12px;
-    border: thin solid $primary-red;
-    padding: 2px 4px
-}
-
-.av_team_roster table {
-    background: $roster-gray-light;
-    background: -moz-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $roster-gray-light), color-stop(36%, $roster-gray), color-stop(100%, $roster-gray-dark));
-    background: -webkit-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
-    background: -o-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
-    background: -ms-linear-gradient(top, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
-    background: linear-gradient(to bottom, $roster-gray-light 0%, $roster-gray 36%, $roster-gray-dark 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$roster-gray-light', endColorstr='$roster-gray-dark', GradientType=0);
-    color: $white;
-    text-align: center;
-    width: 100%
-}
-
-.av_team_roster th {
-    border: thin solid $primary-red;
-    font-weight: bold
-}
-
-.av_player_measurements {
-    display: none
-}
-
-.modal {
-    background-color: $black
-}
-
-.modal-dialog h1 {
-    background-color: transparent;
-    font: bold 2.1em $vollkorn;
-    margin: -5px 5px 0;
-    padding: 0
-}
-
-.modal-header {
-    border-radius: 24px 24px 0px 0px;
-    -moz-border-radius: 24px 24px 0px 0px;
-    -webkit-border-radius: 24px 24px 0px 0px;
-    height: 30px;
-    padding: 12px 15px 8px
-}
-
-.modal-header div.icon {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    text-align: center;
-    width: 30px
-}
-
-.modal-header div.title {
-    text-align: center;
-    float: left
-}
-
-.modal-header .av_icon {
-    color: white;
-    width: 30px
-}
-
-.modal-footer {
-    border-radius: 0px 0px 24px 24px;
-    -moz-border-radius: 0px 0px 24px 24px;
-    -webkit-border-radius: 0px 0px 24px 24px;
-    height: 30px;
-    padding: 10px
-}
-
-#watchlist_add_new {
-    display: none;
-    margin: 10px auto;
-    top: 0;
-    left: -360px;
-    position: absolute;
-    width: 350px;
-    z-index: 200 !important
-}
-
-#watchlist_add_new .av_dialog_widget_message {
-    text-align: center
-}
-
-#addNewWatchlistButton {
-    background-color: $primary-red;
-    color: $white;
-    width: 75px;
-    padding: 4px
-}
-
-#av_athleteEntry fieldset {
-    float: left;
-    margin: 10px 2px;
-    .tab {
-        border: $tab-widget-legend thin solid;
-        -webkit-border-top-left-radius: 17px;
-        -webkit-border-top-right-radius: 17px;
-        -moz-border-radius-topleft: 17px;
-        -moz-border-radius-topright: 17px;
-        border-top-left-radius: 17px;
-        border-top-right-radius: 17px;
-        padding: 0 5%;
-        min-width: 100px;
-        text-align: center;
-        color: white
-    }
-    .current {
-        border-bottom: none
-    }
-}
-
-.av_tab_widget {
-    legend {
-        float: left;
-        border: $tab-widget-legend thin solid;
-        -webkit-border-top-left-radius: 17px;
-        -webkit-border-top-right-radius: 17px;
-        -moz-border-radius-topleft: 17px;
-        -moz-border-radius-topright: 17px;
-        border-top-left-radius: 17px;
-        border-top-right-radius: 17px;
-        padding: 0 5%;
-        min-width: 100px;
-        text-align: center;
-        color: white
-    }
-    fieldset {
-        margin: 10px 12px
-    }
-}
-.av_controls {
-    div {
-        float: left;
-    }
-    h1 {
-        margin: 0
-    }
-}
-
-.tab-content {
-    overflow: visible;
-    width: 100%
-}
-
-.ath_panel_team {
-    label {
-        margin-right: 4px;
-        text-align: right;
-        width: 20%
-    }
-    h3 {
-        border-bottom: $primary-red thin solid
-    }
-}
-
-.av_multivalue_row {
-    margin-top: 0
-}
-
-.av_multivalue {
-    font: normal 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    float: left;
-    margin-left: 5%;
-    width: 45%;
-    label {
-        margin-right: 4px;
-        text-align: right;
-        width: 40%
-    }
-}
-
-#measureSelect, #teamSelect {
-    margin-right: 8%
-}
-
-#measureSelect, #teamSelect, #positionSelect {
-    float: right
-}
-
-
-
-.av_game {
-    background-color: $av-game;
-    font-family: $veranda;
-    font-size: 14px
-}
-
-.accordion-group {
-    border: none
-}
-
-.accordion-inner {
-    padding-top: 0
-}
-
-.av_info_tiny, .av_info_tiny a {
-    font-size: 11px
-}
-
-.av_info_text, .av_info_text a {
-    font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
-    padding-top: 4px
-}
-
-.av_info_important, .av_info_important a {
-    font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif
-}
-
-.av_important {
-    font: bold 1.4em helvetica, Verdana, sertif;
-    color: $primary-red
-}
-.av_save {
-    background-color: $av-save-background;
-    color: $white;
-    background-image: -moz-linear-gradient(top, $av-save-background, $av-save-background-image);
-    background-image: -ms-linear-gradient(top, $av-save-background, $av-save-background-image);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-save-background), to($av-save-background-image));
-    background-image: -webkit-linear-gradient(top, $av-save-background, $av-save-background-image);
-    background-image: -o-linear-gradient(top, $av-save-background, $av-save-background-image);
-    background-image: linear-gradient(top, $av-save-background, $av-save-background-image);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', 
-            endColorstr='$av-save-background-image', GradientType=0);
+    padding-left: 26px;
     &:hover {
-        background-color: $av-save-hover;
-        color: $primary-red;
-        transition: none
+        cursor: pointer
     }
 }
 
-.av_cancel {
-    color: $white;
-    background-color: $primary-red;
-    background-image: -moz-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    background-image: -ms-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-cancel-gradient), to($av-cancel-gradient-dark));
-    background-image: -webkit-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    background-image: -o-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    background-image: linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', 
-            endColorstr='$av-cancel-gradient-dark', GradientType=0);
-    &:hover {
-        background-color: $av-cancel-hover;
-        color: $black;
-        transition: none;
-    }
-}
-
-.av_accordion_title_bar {
-    box-shadow: 0 1px 0 $black;
-    background-color: $black;
-    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from($video-event-title), to($black));
-    background-image: -webkit-linear-gradient(top, $video-event-title 0%, $black 100%);
-    background-image: -moz-linear-gradient(top, $video-event-title 0%, $black 100%);
-    background-image: -ms-linear-gradient(top, $video-event-title 0%, $black 100%);
-    background-image: -o-linear-gradient(top, $video-event-title 0%, $black 100%);
-    background-image: linear-gradient(top, $video-event-title 0%, $black 100%);
-    font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
-    height: 36px;
-    width: 100%
-}
-
-.av_accordion_title_bar_red {
-    box-shadow: 0 1px 0 $black;
-    font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
-    height: 32px;
-    margin-bottom: 8px;
-    width: 100%
-}
 
 .av_title_bar_red {
     background: $primary-red;
@@ -700,23 +81,6 @@
     line-height: 1
 }
 
-.av_accordion_trigger:hover {
-    cursor: pointer
-}
-
-.av_accordion_title {
-    padding-left: 45px;
-    padding-top: 6px
-}
-
-.av_accordion_indent {
-    padding-left: 35px
-}
-
-.av_accordion_section {
-    overflow: auto
-}
-
 .av_float_button_bar {
     position: absolute;
     right: 0;
@@ -729,24 +93,6 @@
 
 .jsEventName:hover {
     cursor: pointer
-}
-
-.vfont_small, .vfont_medium, .vfont_large {
-    font-family: $vollkorn;
-    font-weight: normal;
-    color: $headings
-}
-
-.vfont_small {
-    font-size: 1em
-}
-
-.vfont_medium {
-    font-size: 1.5em
-}
-
-.vfont_large {
-    font-size: 2em
 }
 
 .disabled {
@@ -765,29 +111,12 @@
 
 .av_control {
     margin-top: 2%;
-    width: 100%
-}
-
-.av_control label {
-    padding-top: 4px;
-    padding-right: 4px;
-    text-align: right
-}
-
-.terms_of_use {
-    border: medium solid $primary-red;
-    height: 260px;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: scroll
-}
-
-.terms_of_use p {
-    font-size: 10px
-}
-
-.terms_of_use h1, .terms_of_use h2 {
-    font-size: 12px
+    width: 100%;
+    label {
+        padding-top: 4px;
+        padding-right: 4px;
+        text-align: right
+    }
 }
 
 .av_list_element {
@@ -800,95 +129,6 @@
     background-image: url(../img/ok-icon_16_red.png);
     background-repeat: no-repeat;
     background-position: 5px 7px
-}
-
-.av_btn_success, .av_btn_alternate, .av_btn_cancel {
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    display: inline-block;
-    cursor: pointer;
-    color: $white;
-    font-family: $veranda;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 9px 23px;
-    text-decoration: none
-}
-
-.av_btn_success:hover, .av_btn_alternate:hover, .av_btn_cancel:hover {
-    color: $primary-red
-}
-
-.av_btn_success {
-    -moz-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
-    -webkit-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
-    box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
-    background-color: $av-success-background;
-    border: 1px solid $av-success-border;
-    display: inline-block;
-    cursor: pointer;
-    color: $white;
-    text-shadow: 0px -1px 0px $av-success-text-shadow
-}
-
-.av_btn_success:hover {
-    background-color: $av-success-hover
-}
-
-.av_btn_success:active {
-    position: relative;
-    top: 1px
-}
-
-.av_btn_alternate {
-    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
-    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
-    box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
-    background-color: $av-btn-alt-background;
-    border: 1px solid $av-btn-alt-border;
-    text-shadow: 0px -1px 0px $av-btn-alt-text-shadow
-}
-
-.av_btn_alternate:hover {
-    background-color: $av-btn-alt-hover
-}
-
-.av_btn_alternate:active {
-    position: relative;
-    top: 1px
-}
-
-.av_btn_cancel {
-    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
-    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
-    box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
-    background-color: $av-btn-cancel-background;
-    border: 1px solid $av-btn-cancel-border;
-    text-shadow: 0px -1px 0px $av-btn-cancel-text-shadow
-}
-
-.av_btn_cancel:hover {
-    background-color: $av-btn-cancel-hover
-}
-
-.av_btn_cancel:active {
-    position: relative;
-    top: 1px
-}
-
-.alert-heading {
-    font-weight: bold;
-    line-height: 20px;
-    text-rendering: optimizelegibility
-}
-
-.av_alert {
-    background-color: $primary-red;
-    font: normal 1.5em $vollkorn;
-    margin: 70px auto;
-    text-align: center;
-    width: 50%
 }
 
 .av_close_window:hover {
@@ -907,125 +147,28 @@
     text-align: center;
     width: 40px
 }
-
-#customView_wrapper table {
-    margin: 0
-}
-
-#customView th, #customView td {
-    text-align: center
-}
-
-#customView tr:hover {
-    cursor: pointer
-}
-
-#customView_wrapper {
-    margin: 0;
-    padding: 0
-}
-
-.filter_date {
-    clear: both;
-    font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif;
-    text-align: center;
-    margin: 10px 0
-}
-
-#clearTeams, #clearCourts, #clearTimes {
-    margin: 5px auto
-}
-
-.filter {
-    float: left;
-    display: none;
-    margin: 0 10px 20px;
-    width: 100%;
-    z-index: 1000
-}
-
-.filterBlock {
-    float: left;
-    position: relative;
-    z-index: 100
-}
-
-.filterTitle {
-    font: bold 1.5em $vollkorn
-}
-
-#applyFilter {
-    margin-top: -6px
-}
-
-#filterTogglex::before {
-    content: '&nbsp;';
-    background-image: url("../img/DropdownArrow.gif");
-    width: 15px
-}
-
-#filterToggle {
-    background-image: url("../img/DropdownArrow.png");
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    margin: 0
-}
-
-#filterToggle:hover {
-    cursor: pointer
-}
-
-.filterOption input {
-    margin: 0 10px;
-    padding-right: 4px
-}
-
-.filterOption {
-    float: left;
-    width: 50%
-}
-
-.dataTable {
-    margin-top: 20px
-}
-
-.dataTable table {
-    margin: 0
-}
-
-.dataTable tr:nth-child(odd) {
-    background-color: #333333
-}
-
-.dataTables_paginate {
-    text-align: center
-}
-
 .pagination {
-    list-style: none
-}
-
-.pagination li {
-    float: left;
-    color: #666666;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-left: 2px;
-    min-width: 1.5em;
-    padding: 0.5em 1em;
-    text-align: center
-}
-
-.paginate_button {
-    float: left;
-    color: $light-gray;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-left: 2px;
-    min-width: 1.5em;
-    padding: 0.5em 1em;
-    text-align: center
+    list-style: none;
+    li {
+        float: left;
+        color: #666666;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-left: 2px;
+        min-width: 1.5em;
+        padding: 0.5em 1em;
+        text-align: center
+    }
+    &_button {
+        float: left;
+        color: $light-gray;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-left: 2px;
+        min-width: 1.5em;
+        padding: 0.5em 1em;
+        text-align: center
+    }
 }
 
 #adminBody .active {
@@ -1050,104 +193,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$admin-background-light', endColorstr='$admin-background-dark', GradientType=0)
 }
 
-#userTable th {
-    background-color: $primary-red
-}
-
-#userTable .dataTable th, .dataTable th {
-    color: $white;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: left
-}
-
-#userTable_previous:before {
-    content: "\f060 " " ";
-    font-family: $font-awesome;
-    font-size: medium
-}
-
-#userTable_next:after {
-    content: " " '\f061';
-    font-family: $font-awesome;
-    font-size: medium
-}
-
-#inbox_menu ul {
-    list-style: none
-}
-
-#inbox_menu li {
-    font-size: 1.2em;
-    line-height: 25px
-}
-
-#inbox_menu li li {
-    font-size: inherit
-}
-
-#inbox_menu li:hover {
-    background-color: $primary-red;
-    color: white;
-    cursor: pointer
-}
-
-#inbox_menu li.subItems {
-    background-color: inherit;
-    color: inherit;
-    cursor: inherit
-}
-
-#inbox_menu .current {
-    font-weight: bold
-}
-
 .mc_current {
     display: block
 }
 
-.header_message {
-    font: normal 1.5em $vollkorn;
-    margin-top: 10px;
-    padding: 6px 4px 4px 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%
-}
-
 .hide {
     display: none
-}
-
-.av_panel {
-    margin: 10px 0
-}
-
-.av_panel_heading {
-    background-color: $primary-red;
-    box-sizing: border-box;
-    border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    color: $white;
-    min-height: 40px;
-    padding: 10px
-}
-
-.av_panel_body {
-    background-color: $white;
-    box-sizing: border-box;
-    border-radius: 0px 0px 10px 10px;
-    -moz-border-radius: 0px 0px 10px 10px;
-    -webkit-border-radius: 0px 0px 10px 10px;
-    color: $black;
-    min-height: 250px;
-    padding: 10px
-}
-
-.message_line:hover {
-    cursor: pointer
 }
 
 #av_email_sample {
@@ -1157,11 +208,11 @@
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid $primary-red;
-    padding: 10px
-}
+    padding: 10px;
 
-#av_email_sample h1, #av_email_sample h2 {
-    color: black
+    h1, h2 {
+        color: black
+    }
 }
 
 ul.chzn-results {
@@ -1184,22 +235,6 @@ a.notice_link {
     margin-bottom: 10px
 }
 
-
-
-.av_bookmark_card {
-    margin: 4px 0;
-    padding: 0;
-
-    button {
-        margin-right: 4px
-    }
-}
-
-.av_video_bookmark {
-    width: 100%;
-    overflow: auto
-}
-
 .av_detail {
     display: none;
     background-color: white;
@@ -1220,120 +255,11 @@ a.notice_link {
     }
 }
 
-#save {
-    margin-top: -5px
-}
-
-.success {
-    color: $success
-}
-
-.processing {
-    color: $processing
-}
-
-.show_stable {
-    color: $show_stableeen
-}
-
-.place_arrow {
-    color: $place_arrow;
-
-    &:hover {
-        cursor: pointer
-    }
-}
-
-#arrow_container {
-    position: relative
-}
-
-#vb_arrow {
-    position: absolute;
-    display: none;
-    z-index: 100
-}
-
-#positionArrow {
-    display: none
-}
-
-#add_bookmark {
-    margin-top: -6px
-}
-
-.remove_bkmk {
-    color: darkred;
-    &:hover {
-        cursor: pointer
-    }
-}
-
-.show_message {
-    color: green;
-    display: none
-}
-
-.alert {
-    padding: 8px 35px 8px 14px;
-    background-color: #fcf8e3;
-    border: 1px solid #fbeed5
-}
-
-.alert-success {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    &, .alert-success .alert-heading {
-        color: #7ccf34
-    }
-}
-
-
-.alert-danger, .alert-error {
-    background-color: #f2dede;
-    border-color: #eed3d7
-}
-
-.alert-danger, .alert-error, .alert-danger .alert-heading, .alert-error .alert-heading {
-    color: #a42e08
-}
-
-.alert-info {
-    background-color: #d9edf7;
-    border-color: #bce8f1
-}
-
-.alert-info, .alert-info .alert-heading {
-    color: #0929be
-}
-
-.av_pop {
-    display: none
-}
-
-.glyphicon-bookmark {
-    color: #2e6da4
-}
-
-.glyphicon-eye-open {
-    color: green
-}
-
-.glyphicon-eye-close {
-    color: #a42e08
-}
-
-.glyphicon-none:before {
-    content: "\2122";
-    color: transparent !important
-}
-
 .av_match {
-    padding: 4px
-}
-
-.av_match:hover {
-    cursor: pointer
+    padding: 4px;
+    &:hover {
+        cursor: pointer
+    }
 }
 
 .odd {
@@ -1349,6 +275,3 @@ a.notice_link {
     margin: 20px 0
 }
 
-.panel-primary {
-    border-color: $primary-red
-}

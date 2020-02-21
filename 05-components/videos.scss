@@ -45,20 +45,22 @@
 }
 
 #video_info {
-    margin-top: -6px
+    margin-top: -6px;
+    &_detail {
+        width: 275px;
+        .av_share_profile_video {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}
+#video_detail_message {
+    display: none;
+    margin: 10px 0 0
 }
 
 .position_video {
     float: left
-}
-
-#video_info_detail {
-    width: 275px
-}
-
-#video_detail_message {
-    display: none;
-    margin: 10px 0 0
 }
 
 

@@ -1,25 +1,64 @@
-table thead .sorting, table thead .sorting_asc, table thead .sorting_desc {
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 20px
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+table {
+    thead {
+        .sorting, .sorting_asc, .sorting_desc {
+            background-position: left;
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            &:hover {
+                cursor: pointer
+            }
+        }
+        .sorting {
+            background-image: url(../img/sort_both.png)
+        }
+        .sorting_asc {
+            background-image: url(../img/sort_asc.png)
+        }
+        .sorting_desc {
+            background-image: url(../img/sort_desc.png)
+        }
+    }
+    input[type='checkbox'] {
+        margin: 0 4px
+    }
 }
 
-table thead .sorting:hover, table thead .sorting_asc:hover, table thead .sorting_desc:hover {
-    cursor: pointer
+.dataTable {
+    margin-top: 20px;
+    table {
+        margin: 0
+    }
+    tr:nth-child(odd) {
+        background-color: #333333
+    }
 }
 
-table thead .sorting {
-    background-image: url(../img/sort_both.png)
+.dataTables_paginate {
+    text-align: center
 }
 
-table thead .sorting_asc {
-    background-image: url(../img/sort_asc.png)
+#userTable {
+    th {
+        background-color: $primary-red
+    }
+    .dataTable th {
+        color: $white;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: left
+    }
+    &_previous:before {
+        content: "\f060 " " ";
+        font-family: $font-awesome;
+        font-size: medium
+    }
+    &_next:after {
+        content: " " '\f061';
+        font-family: $font-awesome;
+        font-size: medium
+    }
 }
 
-table thead .sorting_desc {
-    background-image: url(../img/sort_desc.png)
-}
-
-table input[type='checkbox'] {
-    margin: 0 4px
-}

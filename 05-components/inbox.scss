@@ -1,0 +1,28 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+#inbox_menu {
+    ul {
+        list-style: none
+    }
+    li {
+        font-size: 1.2em;
+        line-height: 25px;
+        li {
+            font-size: inherit
+        }
+        :hover {
+            background-color: $primary-red;
+            color: white;
+            cursor: pointer
+        }
+        .subItems {
+            background-color: inherit;
+            color: inherit;
+            cursor: inherit
+        }        
+    }
+    .current {
+        font-weight: bold
+    }
+}
