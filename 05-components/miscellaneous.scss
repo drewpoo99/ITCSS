@@ -65,21 +65,22 @@
     }
 }
 
+.av_title_bar {
+    &_red {
+        background: $primary-red;
+        background: -moz-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-red), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
+                    color-stop(100%, $black));
+        background: -webkit-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+        background: -o-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+        background: -ms-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+        background: linear-gradient(to bottom, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$black', GradientType=0)
+    }
 
-.av_title_bar_red {
-    background: $primary-red;
-    background: -moz-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $primary-red), color-stop(50%, #b51d1b), color-stop(51%, #ab2112), 
-                color-stop(100%, $black));
-    background: -webkit-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
-    background: -o-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
-    background: -ms-linear-gradient(top, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
-    background: linear-gradient(to bottom, $primary-red 0%, #b51d1b 50%, #ab2112 51%, $black 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary-color', endColorstr='$black', GradientType=0)
-}
-
-.av_title_bar_loose {
-    line-height: 1
+    &_loose {
+        line-height: 1
+    }
 }
 
 .av_float_button_bar {
@@ -108,16 +109,6 @@
     margin-right: 2px;
     padding-left: 12px;
     padding-right: 12px
-}
-
-.av_control {
-    margin-top: 2%;
-    width: 100%;
-    label {
-        padding-top: 4px;
-        padding-right: 4px;
-        text-align: right
-    }
 }
 
 .av_list_element {

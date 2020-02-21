@@ -16,9 +16,17 @@
         color: $av-label;
     }
 }
-
-.av_control_label {
-    float: left;
-    text-align: right;
-    padding-right: 10px
+.av_control {
+    margin-top: 2%;
+    width: 100%;
+    label {
+        padding-top: 4px;
+        padding-right: 4px;
+        text-align: right
+    }
+    &_label {
+        float: left;
+        text-align: right;
+        padding-right: 10px
+    }
 }
