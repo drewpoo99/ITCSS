@@ -1,5 +1,39 @@
+<<<<<<< HEAD
 @use '../00-settings/colors.scss';
 @use '../00-settings/fonts.scss';
+=======
+@import '/00-settings/colors.scss';
+@import '/00-settings/fonts.scss';
+
+@import '/01-tools/mixins.scss';
+
+@import '/02-generic/generic.scss';
+
+@import '/03-elements/text-styling.scss';
+
+@import '/05-components/article-post.scss';
+@import '/05-components/athlete.scss';
+@import '/05-components/av-dialog-widget.scss';
+@import '/05-components/av-team-roster.scss';
+@import '/05-components/av-watchlist.scss';
+@import '/05-components/av_dropdown.scss';
+@import '/05-components/av_go.scss';
+@import '/05-components/av_loginbox.scss';
+@import '/05-components/av_portrait.scss';
+@import '/05-components/backgroundgradient.scss';
+@import '/05-components/format.scss';
+@import '/05-components/inbox_menu.scss';
+@import '/05-components/modal.scss';
+@import '/05-components/searching.scss';
+@import '/05-components/table.scss';
+@import '/05-components/videos.scss';
+
+@import '/06-utilities/utilities.scss';
+
+.navbar-nav {
+    border-bottom: 2px solid $primary-red
+}
+>>>>>>> 5bd4299cd30bb24a5de509ae4f7c296d7bd7e835
 
 .user_image {
     max-width: 150px
@@ -41,6 +75,59 @@
     height: 250px
 }
 
+<<<<<<< HEAD
+=======
+.nav {
+    margin-bottom: 0;
+
+    a.disabled-link {
+        color: $gray;
+        cursor: default;        
+        &:hover {
+            background-color: white;
+            background: none;
+            color: $gray;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$white', endColorstr='$white', GradientType=1)
+        }
+    }
+    
+}
+
+.accordion {
+    margin-bottom: 0
+}
+
+.accordion-body {
+    padding: 0 4%
+}
+
+.av_widget {
+    height: 415px;
+    overflow: auto;
+    padding: 0 1%
+}
+
+.av_widget-box {
+    margin: 16px auto
+}
+
+.av_message {
+    padding: 2px 1% 16px;
+    p {
+        margin: 0
+    }
+}
+
+.av_error_message {
+    clear: both;
+    color: $av-error-message;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 4px;
+    width: 80%
+}
+
+>>>>>>> 5bd4299cd30bb24a5de509ae4f7c296d7bd7e835
 .av_date {
     font-size: 11px;
     color: #DDDDDD
@@ -58,7 +145,288 @@
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left center;
+<<<<<<< HEAD
     padding-left: 26px;
+=======
+    padding-left: 26px
+}
+
+.nonAV:hover {
+    cursor: pointer
+}
+
+#av_pop {
+    background: $black;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    z-index: 200 !important
+}
+
+#av_bkgnd_pop, .av_bkgnd_pop {
+    opacity: 0.55;
+    filter: alpha(opacity=55.0);
+    background: $black;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.av_bkgnd_pop {
+    display: block
+}
+
+#av_pop_close, .av_close_dialog {
+    float: right
+}
+
+.coach-dash-team th, .coach-dash-team td {
+    font-size: 11px;
+    line-height: 10px
+}
+
+.av_team {
+    margin: 10px 0 0
+}
+
+.av_player {
+    text-align: left !important
+}
+
+.av_header_right {
+    float: right
+}
+
+.av_header_left {
+    float: left
+}
+
+.av_header_icons {
+    margin: 10px 0;
+    padding: 6px 0
+}
+
+.av_header_icons .icon {
+    padding: 7px
+}
+
+.icon:hover {
+    cursor: pointer
+}
+
+#av_addToWatchlist .widget-title {
+    border-bottom: none
+}
+
+#av_addToWatchlist .widget-title span.icon {
+    margin-right: 8px
+}
+
+#av_addToWatchlist .widget-content {
+    padding: 0 5px 5px
+}
+
+#av_addToWatchlist p {
+    padding-left: 25px;
+    background-image: url(../img/plus-sign.png);
+    background-repeat: no-repeat;
+    background-position: 0 2px
+}
+
+#av_addToWatchlist .av-message span {
+    padding-left: 25px
+}
+
+.posRel {
+    position: relative
+}
+
+#awayTeamRoster {
+    float: right
+}
+
+.av_player_measurements {
+    display: none
+}
+
+
+#watchlist_add_new {
+    display: none;
+    margin: 10px auto;
+    top: 0;
+    left: -360px;
+    position: absolute;
+    width: 350px;
+    z-index: 200 !important
+}
+
+#watchlist_add_new .av_dialog_widget_message {
+    text-align: center
+}
+
+#addNewWatchlistButton {
+    background-color: $primary-red;
+    color: $white;
+    width: 75px;
+    padding: 4px
+}
+
+#av_athleteEntry fieldset {
+    float: left;
+    margin: 10px 2px;
+    .tab {
+        border: $tab-widget-legend thin solid;
+        -webkit-border-top-left-radius: 17px;
+        -webkit-border-top-right-radius: 17px;
+        -moz-border-radius-topleft: 17px;
+        -moz-border-radius-topright: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        padding: 0 5%;
+        min-width: 100px;
+        text-align: center;
+        color: white
+    }
+    .current {
+        border-bottom: none
+    }
+}
+
+.av_tab_widget {
+    legend {
+        float: left;
+        border: $tab-widget-legend thin solid;
+        -webkit-border-top-left-radius: 17px;
+        -webkit-border-top-right-radius: 17px;
+        -moz-border-radius-topleft: 17px;
+        -moz-border-radius-topright: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        padding: 0 5%;
+        min-width: 100px;
+        text-align: center;
+        color: white
+    }
+    fieldset {
+        margin: 10px 12px
+    }
+}
+.av_controls {
+    div {
+        float: left;
+    }
+    h1 {
+        margin: 0
+    }
+}
+
+.tab-content {
+    overflow: visible;
+    width: 100%
+}
+
+.ath_panel_team {
+    label {
+        margin-right: 4px;
+        text-align: right;
+        width: 20%
+    }
+    h3 {
+        border-bottom: $primary-red thin solid
+    }
+}
+
+.av_multivalue_row {
+    margin-top: 0
+}
+
+.av_multivalue {
+    font: normal 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    margin-left: 5%;
+    width: 45%;
+    label {
+        margin-right: 4px;
+        text-align: right;
+        width: 40%
+    }
+}
+
+#measureSelect, #teamSelect {
+    margin-right: 8%
+}
+
+#measureSelect, #teamSelect, #positionSelect {
+    float: right
+}
+
+
+
+.av_game {
+    background-color: $av-game;
+    font-family: $veranda;
+    font-size: 14px
+}
+
+.accordion-group {
+    border: none
+}
+
+.accordion-inner {
+    padding-top: 0
+}
+
+.av_info_tiny, .av_info_tiny a {
+    font-size: 11px
+}
+
+.av_info_text, .av_info_text a {
+    font: normal 16px "Vollkorn", Georgia, "Times New Roman", Times, serif;
+    padding-top: 4px
+}
+
+.av_info_important, .av_info_important a {
+    font: normal 20px "Vollkorn", Georgia, "Times New Roman", Times, serif
+}
+
+.av_important {
+    font: bold 1.4em helvetica, Verdana, sertif;
+    color: $primary-red
+}
+.av_save {
+    background-color: $av-save-background;
+    color: $white;
+    background-image: -moz-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -ms-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-save-background), to($av-save-background-image));
+    background-image: -webkit-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: -o-linear-gradient(top, $av-save-background, $av-save-background-image);
+    background-image: linear-gradient(top, $av-save-background, $av-save-background-image);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-save-background', 
+            endColorstr='$av-save-background-image', GradientType=0);
+    &:hover {
+        background-color: $av-save-hover;
+        color: $primary-red;
+        transition: none
+    }
+}
+
+.av_cancel {
+    color: $white;
+    background-color: $primary-red;
+    background-image: -moz-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -ms-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($av-cancel-gradient), to($av-cancel-gradient-dark));
+    background-image: -webkit-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: -o-linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    background-image: linear-gradient(top, $av-cancel-gradient, $av-cancel-gradient-dark);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$av-cancel-gradient', 
+            endColorstr='$av-cancel-gradient-dark', GradientType=0);
+>>>>>>> 5bd4299cd30bb24a5de509ae4f7c296d7bd7e835
     &:hover {
         cursor: pointer
     }
@@ -131,6 +499,23 @@
     background-position: 5px 7px
 }
 
+<<<<<<< HEAD
+=======
+.alert-heading {
+    font-weight: bold;
+    line-height: 20px;
+    text-rendering: optimizelegibility
+}
+
+.av_alert {
+    background-color: $primary-red;
+    font: normal 1.5em $vollkorn;
+    margin: 70px auto;
+    text-align: center;
+    width: 50%
+}
+
+>>>>>>> 5bd4299cd30bb24a5de509ae4f7c296d7bd7e835
 .av_close_window:hover {
     cursor: pointer;
     color: $primary-red
@@ -193,6 +578,32 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$admin-background-light', endColorstr='$admin-background-dark', GradientType=0)
 }
 
+<<<<<<< HEAD
+=======
+#userTable th {
+    background-color: $primary-red
+}
+
+#userTable .dataTable th, .dataTable th {
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left
+}
+
+#userTable_previous:before {
+    content: "\f060 " " ";
+    font-family: $font-awesome;
+    font-size: medium
+}
+
+#userTable_next:after {
+    content: " " '\f061';
+    font-family: $font-awesome;
+    font-size: medium
+}
+
+>>>>>>> 5bd4299cd30bb24a5de509ae4f7c296d7bd7e835
 .mc_current {
     display: block
 }
