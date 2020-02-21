@@ -1,0 +1,77 @@
+@use '../00-settings/colors.scss';
+@use '../00-settings/fonts.scss';
+
+.av_btn_success, .av_btn_alternate, .av_btn_cancel {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: $white;
+    font-family: $veranda;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 9px 23px;
+    text-decoration: none
+}
+
+.av_btn_success:hover, .av_btn_alternate:hover, .av_btn_cancel:hover {
+    color: $primary-red
+}
+
+.av_btn_success {
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-success-box-shadow;
+    background-color: $av-success-background;
+    border: 1px solid $av-success-border;
+    display: inline-block;
+    cursor: pointer;
+    color: $white;
+    text-shadow: 0px -1px 0px $av-success-text-shadow
+}
+
+.av_btn_success:hover {
+    background-color: $av-success-hover
+}
+
+.av_btn_success:active {
+    position: relative;
+    top: 1px
+}
+
+.av_btn_alternate {
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-btn-alt-box-shadow;
+    background-color: $av-btn-alt-background;
+    border: 1px solid $av-btn-alt-border;
+    text-shadow: 0px -1px 0px $av-btn-alt-text-shadow
+}
+
+.av_btn_alternate:hover {
+    background-color: $av-btn-alt-hover
+}
+
+.av_btn_alternate:active {
+    position: relative;
+    top: 1px
+}
+
+.av_btn_cancel {
+    -moz-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    -webkit-box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    box-shadow: inset 0px 34px 0px -15px $av-btn-cancel-box-shadow;
+    background-color: $av-btn-cancel-background;
+    border: 1px solid $av-btn-cancel-border;
+    text-shadow: 0px -1px 0px $av-btn-cancel-text-shadow
+}
+
+.av_btn_cancel:hover {
+    background-color: $av-btn-cancel-hover
+}
+
+.av_btn_cancel:active {
+    position: relative;
+    top: 1px
+}
