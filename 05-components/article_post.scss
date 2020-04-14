@@ -1,6 +1,10 @@
 @use '../00-settings/colors.scss';
 @use '../00-settings/fonts.scss';
 
+
+$gray: gray;
+$primary-red: #7a021b;
+$vollkorn: "Vollkorn", serif;
 .article-post {
     padding: 4px 1%;
 
